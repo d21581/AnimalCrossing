@@ -4,7 +4,11 @@ poissons et insectes manquants disponible en ce momant
 pour chacun d'eux.
 '''
 
+import datetime
 
+heure_actuelle = datetime.datetime.now()
+
+print(heure_actuelle)
 
 '''
 Afficher un menu de choix d'opérations
