@@ -20,7 +20,7 @@ Common
 On trees
 July-August
 All day
-These are old shells of Cicadas. These won’t run away when you get near them but they can be lost if you shake the tree they’re on.
+These are old shells of Cicadas. These won't run away when you get near them but they can be lost if you shake the tree they're on.
 
 Common Butterfly
 90
@@ -85,7 +85,7 @@ Rare
 On villagers
 March-November
 All Day
-You’ll find fleas on villagers. You’ll know if a villager has a flea on him/her when you see them itching or telling you outright that they’re itching. You’ll also notice a black dot jumping over their heads. Simply take your net out and hit the infected villager to capture the critter.
+You'll find fleas on villagers. You'll know if a villager has a flea on him/her when you see them itching or telling you outright that they're itching. You'll also notice a black dot jumping over their heads. Simply take your net out and hit the infected villager to capture the critter.
 
 Fly
 80
@@ -150,7 +150,7 @@ Common
 Near flowers
 March-June
 8AM-5PM
-These are the harmless type of bees and will not sting the player. However, they shouldn’t be confused to the tree-dwelling bees that come out of honeycombs.
+These are the harmless type of bees and will not sting the player. However, they shouldn't be confused to the tree-dwelling bees that come out of honeycombs.
 
 Horned Atlas
 8000
@@ -180,7 +180,7 @@ Very Rare
 On palm or coconut trees
 July-August
 7PM-8AM
-Since this is one of the rarest and highest priced insects in the game, the Horned Hercules is very sensitive and skittish. Even if you sneak behind it, there’s still a high chance of scaring it away. The recommended method is to walk as slowly as possible when approaching it.
+Since this is one of the rarest and highest priced insects in the game, the Horned Hercules is very sensitive and skittish. Even if you sneak behind it, there's still a high chance of scaring it away. The recommended method is to walk as slowly as possible when approaching it.
 
 House Centipede
 250
@@ -209,7 +209,7 @@ Common
 Grass, ground
 May-November
 8AM-7PM
-It can be annoying to catch since they’re camouflaged in nearby grass. They’ll flee once startled though you can still grab it with your net if they’re within range.
+It can be annoying to catch since they're camouflaged in nearby grass. They'll flee once startled though you can still grab it with your net if they're within range.
 
 Longhorn Beetle
 260
@@ -224,7 +224,7 @@ Uncommon
 On flowers
 April-November
 8AM-4PM
-These blend well with flowers and you’ll probably run into one without you noticing it immediately.
+These blend well with flowers and you'll probably run into one without you noticing it immediately.
 
 Migratory Locust
 600
@@ -232,7 +232,7 @@ Uncommon
 On grass, ground
 All year
 8AM-7PM
-You’ll find these easily in Tropical Island. They’re fairly easy to catch, especially if you don’t startle them.
+You'll find these easily in Tropical Island. They're fairly easy to catch, especially if you don't startle them.
 
 Miyama Stag
 1000
@@ -262,7 +262,7 @@ Common
 Flying, field
 June-September
 5PM-4AM
-These are really small and hard to spot. Sometimes, you’ll have to rely on the sound they make to know that there’s one nearby.
+These are really small and hard to spot. Sometimes, you'll have to rely on the sound they make to know that there's one nearby.
 
 
 Moth
@@ -285,7 +285,7 @@ Rare
 on white flowers, dandelions
 April-November
 8AM-5PM
-This is really hard to spot and you’ll most likely startle them when you’re approaching groups of flowers. The only way to find it is to stay still for a few seconds and observe the nearby flowers for any movements.
+This is really hard to spot and you'll most likely startle them when you're approaching groups of flowers. The only way to find it is to stay still for a few seconds and observe the nearby flowers for any movements.
 
 Peacock Butterfly
 220
@@ -308,7 +308,7 @@ Uncommon
 Ponds, lakes, rivers
 May-September
 8AM-7PM
-You’ll find them sliding over the water. Just nab them when they’re within range.
+You'll find them sliding over the water. Just nab them when they're within range.
 
 Rainbow Stag
 10000
@@ -383,7 +383,7 @@ Uncommon
 Location:Trees
 March - October
 All Day
-This is one of the insects you’ll only find by shaking trees. It will dangle for a few seconds and if not caught, will retreat back to the tree. Fortunately, you can shake the tree as many times as you need until you successfully capture it.
+This is one of the insects you'll only find by shaking trees. It will dangle for a few seconds and if not caught, will retreat back to the tree. Fortunately, you can shake the tree as many times as you need until you successfully capture it.
 
 
 Stinkbug
