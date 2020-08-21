@@ -1,570 +1,570 @@
 Angelfish
-Selling Price: 3000
-Rarity: Rare
-Location: River
-Silhouette: Small
-Months: May to October
-Time: 4PM-9AM
+3000
+Rare
+River
+Small
+May to October
+4PM-9AM
 This is an uncommon catch so you’ll have to hang near the riverside a bit during the recommended months and time.
 
 Arapaima
-Selling Price: 10000
-Rarity: Rare
-Location: River
-Silhouette: Large
-Months: July – September
-Time: 4PM-9AM
+10000
+Rare
+River
+Large
+July – September
+4PM-9AM
 
 Arowana
-Selling Price: 10000
-Rarity: Rare
-Location: River
-Silhouette: Large
-Months: June- September
-Time: 4PM-9AM
+10000
+Rare
+River
+Large
+June- September
+4PM-9AM
 
 Barbel Steed
-Selling Price: 160
+160
 Rarity:Common
-Location: River
-Silhouette: Medium
-Months: All year
-Time: All Day
+River
+Medium
+All year
+All Day
 
 Barred Knifejaw
-Selling Price: 5000
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Medium
-Months: March to November
-Time: All Day
+5000
+Uncommon
+Ocean
+Medium
+March to November
+All Day
 
 Bitterling
-Selling Price: 900
-Rarity: Common
-Location: River
-Silhouette: Smallest
-Months: December - February
-Time: All Day
+900
+Common
+River
+Smallest
+December - February
+All Day
 
 Black Bass
-Selling Price: 240
-Rarity: Common
-Location: River
-Silhouette: Medium
-Months: All year
-Time: All day
+240
+Common
+River
+Medium
+All year
+All day
 
 Blue Marlin
-Selling Price: 10000
-Rarity: Rare
-Location: Ocean, Tropical Island
-Silhouette: Large
-Months: July to September
-Time: All Day
+10000
+Rare
+Ocean, Tropical Island
+Large
+July to September
+All Day
 
 Bluegill
-Selling Price: 120
-Rarity: Uncommon
-Location: River
-Silhouette: Small
-Months: All year
-Time: 9AM-4PM
+120
+Uncommon
+River
+Small
+All year
+9AM-4PM
 
 Butterfly Fish
-Selling Price: 1000
-Rarity: Uncommon
-Location: ocean
-Silhouette: Small
-Months: April - September
-Time: All Day
+1000
+Uncommon
+ocean
+Small
+April - September
+All Day
 
 Carp
-Selling Price: 300
-Rarity: Common
-Location: River
-Silhouette: Large
-Months: All year
-Time: All Day
+300
+Common
+River
+Large
+All year
+All Day
 
 Catfish
-Selling Price: 800
-Rarity: Common
-Location: Pond, river
-Silhouette: Large
-Months: May to October
-Time: 4PM-9AM
+800
+Common
+Pond, river
+Large
+May to October
+4PM-9AM
 
 Char
-Selling Price: 3800
-Rarity: Uncommon
-Location: Waterfall
-Silhouette: Medium
-Months: March to June, September to November
-Time: 4AM-9AM, 4PM-9PM (Mar to Jun) / 4AM-9PM (Sep-Nov)
+3800
+Uncommon
+Waterfall
+Medium
+March to June, September to November
+4AM-9AM, 4PM-9PM (Mar to Jun) / 4AM-9PM (Sep-Nov)
 
 Cherry Salmon
-Selling Price: 1000
-Rarity: Uncommon
-Location: River
-Silhouette: Small
-Months: March to June, September to November
-Time: 4AM-9AM, 4PM-9PM (Mar to Jun) / 4AM-9PM (Sep-Nov)
+1000
+Uncommon
+River
+Small
+March to June, September to November
+4AM-9AM, 4PM-9PM (Mar to Jun) / 4AM-9PM (Sep-Nov)
 
 Clown Fish
-Selling Price: 650
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Smallest
-Months: April – Sepember
-Time: All Day
+650
+Uncommon
+Ocean
+Smallest
+April – Sepember
+All Day
 
 Coelacanth
-Selling Price: 15000
-Rarity: Very rare
-Location: Ocean (when raining or snowing)
-Silhouette: Very large
-Months: All Year
-Time: 4PM-9AM
+15000
+Very rare
+Ocean (when raining or snowing)
+Very large
+All Year
+4PM-9AM
 
 Crawfish
-Selling Price: 200
-Rarity: Common
-Location: Pond
-Silhouette: Small
-Months: April to September
-Time: All Day
+200
+Common
+Pond
+Small
+April to September
+All Day
 
 Crucian Carp
-Selling Price: 120
-Rarity: Common
-Location: River
-Silhouette: Small
-Months: All year
-Time: All day
+120
+Common
+River
+Small
+All year
+All day
 
 Dab
-Selling Price: 300
-Rarity: Common
-Location: Ocean
-Silhouette: Medium
-Months: October – April
-Time: All Day
+300
+Common
+Ocean
+Medium
+October – April
+All Day
 
 Dace
-Selling Price: 200
-Rarity: Common
-Location: River
-Silhouette: Medium
-Months: All year
-Time: 4PM-9AM
+200
+Common
+River
+Medium
+All year
+4PM-9AM
 
 Dorado
-Selling Price: 15000
-Rarity: Very rare
-Location: River
-Silhouette: Large
-Months: June - September
-Time: 4AM-9PM
+15000
+Very rare
+River
+Large
+June - September
+4AM-9PM
 
 Eel
-Selling Price: 2000
-Rarity: Common
-Location: River
-Silhouette: Large, slender
-Months: June - September
-Time: 4PM-9AM
+2000
+Common
+River
+Large, slender
+June - September
+4PM-9AM
 
 Football Fish
-Selling Price: 2500
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Large
-Months: November - March
-Time: 4PM-9AM
+2500
+Uncommon
+Ocean
+Large
+November - March
+4PM-9AM
 
 Freshwater Goby
-Selling Price: 300
-Rarity: Rare
-Location: River
-Silhouette: Smallest
-Months: All year
-Time: 4PM-9AM
+300
+Rare
+River
+Smallest
+All year
+4PM-9AM
 
 Frog
-Selling Price: 250
-Rarity: Common
-Location: Pond
-Silhouette: Small
-Months: May - August
-Time: All Day
+250
+Common
+Pond
+Small
+May - August
+All Day
 
 Gar
-Selling Price: 6000
-Rarity: Rare
-Location: Pond
-Silhouette: Very Large
-Months: June- September
-Time: 4PM-9AM
+6000
+Rare
+Pond
+Very Large
+June- September
+4PM-9AM
 
 Giant Snakehead
-Selling Price: 5500
-Rarity: Uncommon
-Location: Pond
-Silhouette: Very Large
-Months: June-August
-Time: 9AM-4PM
+5500
+Uncommon
+Pond
+Very Large
+June-August
+9AM-4PM
 
 Giant Trevally
-Selling Price: 4500
-Rarity: Rare
-Location: Tropical Island
-Silhouette: Very Large
-Months: All Year
-Time: All Day
+4500
+Rare
+Tropical Island
+Very Large
+All Year
+All Day
 
 Goldfish
-Selling Price: 1300
-Rarity: Rare
-Location: River
-Silhouette: Smallest
-Months: All year
-Time: All Day
+1300
+Rare
+River
+Smallest
+All year
+All Day
 
 Guppy
-Selling Price: 1300
-Rarity: Rare
-Location: River
-Silhouette: Smallest
-Months: April-November
-Time: 9AM-4PM
+1300
+Rare
+River
+Smallest
+April-November
+9AM-4PM
 
 Hammerhead Shark
-Selling Price: 8000
-Rarity: Rare
-Location: Ocean, Tropical Island
-Silhouette: Large, with fin
-Months: June-September
-Time: 4PM-9AM
+8000
+Rare
+Ocean, Tropical Island
+Large, with fin
+June-September
+4PM-9AM
 
 Horse Mackerel
-Selling Price: 150
-Rarity: Common
-Location: Ocean, River
-Silhouette: Medium
-Months: All year
-Time: All Day
+150
+Common
+Ocean, River
+Medium
+All year
+All Day
 
 Killifish
-Selling Price: 300
-Rarity: Uncommon
-Location: River, pond
-Silhouette: Smallest
-Months: April - August
-Time: All Day
+300
+Uncommon
+River, pond
+Smallest
+April - August
+All Day
 
 King Salmon
-Selling Price: 1800
-Rarity: Uncommon
-Location: River mouth
-Silhouette: Very Large
-Months: September
-Time: All day
+1800
+Uncommon
+River mouth
+Very Large
+September
+All day
 
 Koi
-Selling Price: 4000
-Rarity: Rare
-Location: River
-Silhouette: Large
-Months: All Year
-Time: 4PM-9AM
+4000
+Rare
+River
+Large
+All Year
+4PM-9AM
 
 Loach
-Selling Price: 300
-Rarity: Common
-Location: River
-Silhouette: Smallest
-Months: March - May
-Time: All day
+300
+Common
+River
+Smallest
+March - May
+All day
 
 Moray Eel
-Selling Price: 2000
-Rarity: Uncommon
-Location: ocean
-Silhouette: Very large
-Months: June-October
-Time: All day
+2000
+Uncommon
+ocean
+Very large
+June-October
+All day
 
 Napoleonfish
-Selling Price: 10000
-Rarity: Rare
-Location: Ocean
-Silhouette: Large
-Months: July-August
-Time: All Day
+10000
+Rare
+Ocean
+Large
+July-August
+All Day
 
 Neon Tetra
 
-Selling Price: 500
-Rarity: Uncommon
-Location: River
-Silhouette: Smallest
-Months: April - November
-Time: 9AM-4PM
+500
+Uncommon
+River
+Smallest
+April - November
+9AM-4PM
 
 Nibble Fish
-Selling Price: 1200
-Rarity: Rare
-Location: River
-Silhouette: Small
-Months: June-early September
-Time: 9AM-4PM
+1200
+Rare
+River
+Small
+June-early September
+9AM-4PM
 
 Oarfish
-Selling Price: 9000
-Rarity: Rare
-Location: Ocean
-Silhouette: Large
-Months: December-May
-Time: All day
+9000
+Rare
+Ocean
+Large
+December-May
+All day
 
 Ocean Sunfish
-Selling Price: 4000
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Large (with fin)
-Months: June - September
-Time: 4AM-9PM
+4000
+Uncommon
+Ocean
+Large (with fin)
+June - September
+4AM-9PM
 
 Olive Flounder
-Selling Price: 800
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Large
-Months: All Year
-Time: All day
+800
+Uncommon
+Ocean
+Large
+All Year
+All day
 
 Pale Chub
-Selling Price: 160
-Rarity: Uncommon
-Location: River
-Silhouette: Smallest
-Months: All year
-Time: 9AM-4PM
+160
+Uncommon
+River
+Smallest
+All year
+9AM-4PM
 
 Pike
-Selling Price: 1800
-Rarity: Uncommon
-Location: River
-Silhouette: Very Large
-Months: September - December
-Time: 4AM-9PM
+1800
+Uncommon
+River
+Very Large
+September - December
+4AM-9PM
 
 Piranha
-Selling Price: 2500
-Rarity: Rare
-Location: River
-Silhouette: Small
-Months: June- September
-Time: 9AM-4PM, 9PM-4AM
+2500
+Rare
+River
+Small
+June- September
+9AM-4PM, 9PM-4AM
 
 Pond Smelt
-Selling Price: 300
-Rarity: Common
-Location: River
-Silhouette: Small
-Months: December - Feb
-Time: All Day
+300
+Common
+River
+Small
+December - Feb
+All Day
 
 Pop-eyed Goldfish
-Selling Price: 1300
-Rarity: Rare
-Location: River
-Silhouette: Smallest
-Months: All Year
-Time: 9AM-4PM
+1300
+Rare
+River
+Smallest
+All Year
+9AM-4PM
 
 Puffer Fish
-Selling Price: 240
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Small
-Months: July-September
-Time: All Day
+240
+Uncommon
+Ocean
+Small
+July-September
+All Day
 
 Rainbow Trout
-Selling Price: 800
-Rarity: Common
-Location: River
-Silhouette: Large
-Months: March-June, September-November
-Time: 4AM-9PM, 4PM-9PM (Mar-Jun) / 4AM-9PM (Sep-Nov)
+800
+Common
+River
+Large
+March-June, September-November
+4AM-9PM, 4PM-9PM (Mar-Jun) / 4AM-9PM (Sep-Nov)
 
 Ray
-Selling Price: 3000
-Rarity: Rare
-Location: Ocean
-Silhouette: Very large
-Months: August-December
-Time: 4AM-9PM
+3000
+Rare
+Ocean
+Very large
+August-December
+4AM-9PM
 
 Red Snapper
-Selling Price: 3000
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Large
-Months: All year
-Time: All day
+3000
+Uncommon
+Ocean
+Large
+All year
+All day
 
 Ribbon Eel
-Selling Price: 600
-Rarity: Uncommon
-Location: Tropical Island
-Silhouette: Long, slender
-Months: All year
-Time: All day
+600
+Uncommon
+Tropical Island
+Long, slender
+All year
+All day
 
 Saddled Bichir
-Selling Price: 4000
-Rarity: Rare
-Location: River
-Silhouette: Medium
-Months: June-September
-Time: 9PM-4AM
+4000
+Rare
+River
+Medium
+June-September
+9PM-4AM
 
 Salmon
-Selling Price: 700
-Rarity: Common
-Location: River/Ocean
-Silhouette: Large
-Months: September
-Time: All Day
+700
+Common
+River/Ocean
+Large
+September
+All Day
 
 Saw Shark
-Selling Price: 12000
-Rarity: Rare
-Location: Tropical Island, Ocean
-Silhouette: Large (with fin)
-Months: June-September
-Time: 4PM-9AM
+12000
+Rare
+Tropical Island, Ocean
+Large (with fin)
+June-September
+4PM-9AM
 
 Sea Bass
-Selling Price: 160
-Rarity: Common
-Location: Ocean
-Silhouette: Very Large
-Months: All Year
-Time: All Day
+160
+Common
+Ocean
+Very Large
+All Year
+All Day
 
 Sea Butterfly
-Selling Price: 1000
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Smallest
-Months: December-February
-Time: All day
+1000
+Uncommon
+Ocean
+Smallest
+December-February
+All day
 
 Sea Horse
-Selling Price: 1100
-Rarity: Common
-Location: Ocean
-Silhouette: Smallest
-Months: April-November
-Time: All day
+1100
+Common
+Ocean
+Smallest
+April-November
+All day
 
 Shanghai / Mitten Crab
-Selling Price: 2000
-Rarity: Rare
-Location: River
-Silhouette: Small
-Months: September(mid) - November
-Time: 4PM-9AM
+2000
+Rare
+River
+Small
+September(mid) - November
+4PM-9AM
 
 Shark
-Selling Price: 15000
-Rarity: Rare
-Location: Ocean, Tropical Island
-Silhouette: Large (with fin)
-Months: June - September
-Time: 4PM-9AM
+15000
+Rare
+Ocean, Tropical Island
+Large (with fin)
+June - September
+4PM-9AM
 
 Softshell Turtle
-Selling Price: 3750
-Rarity: Rare
-Location: River
-Silhouette: Medium
-Months: August - September
-Time: 4PM-9AM
+3750
+Rare
+River
+Medium
+August - September
+4PM-9AM
 
 Squid
-Selling Price: 400
-Rarity: Common
-Location: Ocean
-Silhouette: Small
-Months: December- August (Mid)*
-Time: All Day
+400
+Common
+Ocean
+Small
+December- August (Mid)*
+All Day
 (*I was still able to get catch this in June and July)
 
 Stringfish
-Selling Price: 15000
-Rarity: Very Rare
-Location: River
-Silhouette: Large
-Months: December - February
-Time: 4PM-9AM
+15000
+Very Rare
+River
+Large
+December - February
+4PM-9AM
 
 Surgeonfish
-Selling Price: 1000
-Rarity: Uncommon
-Location: Ocean
-Silhouette: Small
-Months: April – September
-Time: All Day
+1000
+Uncommon
+Ocean
+Small
+April – September
+All Day
 
 Sweetfish
-Selling Price: 900
-Rarity: Common
-Location: River
-Silhouette: Medium
-Months: July-(Mid) September
-Time: 4AM-9PM
+900
+Common
+River
+Medium
+July-(Mid) September
+4AM-9PM
 
 Tadpole
-Selling Price: 100
-Rarity: Common
-Location: Pond
-Silhouette: Very small
-Months: March - July
-Time: All Day
+100
+Common
+Pond
+Very small
+March - July
+All Day
 
 Tuna
-Selling Price: 7000
-Rarity: Rare
-Location: Ocean
-Silhouette: Large
-Months: November - March
-Time: All Day
+7000
+Rare
+Ocean
+Large
+November - March
+All Day
 
 Whale Shark
-Selling Price: 13000
-Rarity: Rare
-Location: Tropical Island
-Silhouette: Very large (with fin)
-Months: All year
-Time: All Day
+13000
+Rare
+Tropical Island
+Very large (with fin)
+All year
+All Day
 
 Yellow Perch
-Selling Price: 240
-Rarity: common
-Location: River
-Silhouette: small
-Months: October - March
-Time: All Day
+240
+common
+River
+small
+October - March
+All Day
 
 Zebra Turkeyfish
-Selling Price: 400
-Rarity: Common
-Location: Ocean
-Silhouette: Medium
-Months: April - November
-Time: All Day
+400
+Common
+Ocean
+Medium
+April - November
+All Day

@@ -1,23 +1,20 @@
-###################
-# Les importations:
-###################
-
-import datetime
-
-
 '''
 afficher l'heure actuelle, le nom de chaque joueur et les 
 poissons et insectes manquants disponible en ce momant 
 pour chacun d'eux.
 '''
 
+import datetime
 
 heure_actuelle = datetime.datetime.now()
 
 print('**********************', heure_actuelle, '************************')
-
-
-
+print('**********************', heure_actuelle, '************************')
+print('**********************', heure_actuelle, '************************')
+print('**********************', heure_actuelle, '************************')
+print('**********************', heure_actuelle, '************************')
+print('**********************', heure_actuelle, '************************')
+print('**********************', heure_actuelle, '************************')
 
 with open('fish.txt', 'r') as fichier_bugs:
 
@@ -68,8 +65,33 @@ with open('fish.txt', 'r') as fichier_bugs:
 		nouveau_fichier = nouveau_fichier + nouvelle_ligne
 
 		print('nouvelle ligne: ' + nouvelle_ligne)
+'''
+			if compteur_lignes_block == 3:
+
+				nouvelle_ligne = info_ligne
+
+			if compteur_lignes_block == 4:
+
+				nouvelle_ligne = info_ligne
+
+			if compteur_lignes_block == 5:
+
+				nouvelle_ligne = info_ligne
+
+			if compteur_lignes_block == 6:
+
+				nouvelle_ligne = info_ligne
+
+			if compteur_lignes_block == 7:
+
+				nouvelle_ligne = info_ligne
+'''
 
 
+
+
+
+print('-------------------->\n', nouveau_fichier)
 
 '''
 Afficher un menu de choix d'opérations
@@ -80,9 +102,5 @@ Afficher un menu de choix d'opérations
 5) ajouter un joueur
 6) effacer un joueur
 '''
-
-###############
-# Les fonctions
-###############
 
 
