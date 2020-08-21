@@ -16,14 +16,11 @@ heure_actuelle = datetime.datetime.now()
 
 print('**********************', heure_actuelle, '************************')
 
-
-
-
 with open('fish.txt', 'r') as fichier_bugs:
 
 	total_number_of_lines = 521 #len(fichier_bugs.readlines())
 
-	print(total_number_of_lines)
+	#print(total_number_of_lines)
 
 	lines_to_read = 9
 
@@ -67,7 +64,7 @@ with open('fish.txt', 'r') as fichier_bugs:
 
 		nouveau_fichier = nouveau_fichier + nouvelle_ligne
 
-		print('nouvelle ligne: ' + nouvelle_ligne)
+		#print('nouvelle ligne: ' + nouvelle_ligne)
 
 
 
@@ -84,5 +81,78 @@ Afficher un menu de choix d'opérations
 ###############
 # Les fonctions
 ###############
+
+def load_critters(nom_fichier):
+
+	liste = []
+
+	fini = 0
+
+	with open(nom_fichier, 'r') as fichier:
+
+		while fini != 1:
+
+			info_ligne = fichier.readline()
+
+			if info_ligne != '':
+
+				info_ligne = info_ligne.split(";")
+
+				print(info_ligne)
+
+				liste.append(info_ligne)
+
+			else:
+
+				fini = 1
+
+	return liste
+
+test = load_critters("fish2.txt")
+
+print('ici')
+
+print(test[4])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
