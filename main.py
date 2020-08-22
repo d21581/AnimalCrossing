@@ -102,6 +102,21 @@ mois_numerique = {
 	"December": 12
 }
 
+heures_24 = {
+	'1PM': 13,
+	'2PM': 14,
+	'3PM': 15,
+	'4PM': 16,
+	'5PM': 17,
+	'6PM': 18,
+	'7PM': 19,
+	'8PM': 20,
+	'9PM': 21,
+	'10PM': 22,
+	'11PM': 23,
+	'12PM': 0
+}
+
 critters = ['fish', 'bugs']
 
 listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
@@ -150,6 +165,94 @@ def nommer_mois(mois):
 
 	return noms_mois[mois]
 
+
+def heures_explicites(heures_texte):
+
+	#print(heures_texte)
+
+	if heures_texte == 'All Day':
+
+		return [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]]
+
+	# separer les morceaux (d'abord les blocs, ensuites les premier et derniers mois)
+
+	heures_texte = heures_texte.replace(" ", "") # enlever les espaces inutiles
+
+	heures_texte = heures_texte.replace("AM", "") # enlever les AM inutiles
+
+	blocs = heures_texte.split(",") # certaines créatures ont plusieurs blocs d'heures de présences
+
+	# determiner la première et dernière heure en chiffre et compléter la séquence (remplir les mois entre deux)
+
+	i = 0
+
+	for bloc in blocs:
+
+		fin = -1 # sera remplacé si la période est plus longue que une heure
+
+		deux_heures_lettres = bloc.split("-")
+
+		#print(deux_heures_lettres[0])
+
+		if 'PM' in deux_heures_lettres[0]:
+
+			deux_heures_lettres[0] = heures_24[deux_heures_lettres[0]]
+
+		debut = deux_heures_lettres[0]
+
+		if len(deux_heures_lettres) > 1:
+
+			if 'PM' in deux_heures_lettres[1]:
+
+				deux_heures_lettres[1] = heures_24[deux_heures_lettres[1]]
+
+			fin = int(deux_heures_lettres[1])
+
+		#print(premier_mois)
+
+		gauche = int(debut)
+
+		liste_temp = [gauche]
+
+		if fin != -1: # il a plus d'une heure dans le bloc
+
+			# vérifier que ça ne passe pas à travers minuit
+
+			if gauche > fin: # le bloc commence avant minuit et continue
+
+				while gauche < 23: # remplir la liste jusqu'au mois décembre
+
+					gauche += 1
+
+					liste_temp.append(gauche)
+
+				gauche = -1 # changer à minuit
+
+				while gauche + 1 < fin:
+
+					gauche += 1
+
+					liste_temp.append(gauche)								
+
+			if gauche < fin:
+
+				while gauche + 1 < fin:
+
+					gauche += 1
+
+					liste_temp.append(gauche)
+
+			#liste_temp.append(fin) # ne pas inclure l'heure de la fin puisque ça fini au début de l'heure...
+
+		blocs[i] = liste_temp
+
+		i += 1
+
+	#print(blocs)
+
+	# retourner la liste complète
+
+	return blocs
 
 def mois_explicites(mois_texte):
 
@@ -232,6 +335,8 @@ def creatures_maintenant(mois_demande, heure_demande):
 
 	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
+	index_heures = {'fish':6, 'bugs':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+
 	mois_present_texte = ''
 
 	liste_creatures_presentes = []
@@ -242,19 +347,60 @@ def creatures_maintenant(mois_demande, heure_demande):
 
 			mois_present_texte = creature[index_mois[type_creature]]
 
+			heures_present_texte = creature[index_heures[type_creature]]
+
 			blocs_mois_present_numerique = mois_explicites(mois_present_texte)
+
+			blocs_heures_present_numerique = heures_explicites(heures_present_texte)
 
 			#print(creature[0], blocs_mois_present_numerique)
 
-			for bloc in blocs_mois_present_numerique:
+			for bloc_mois in blocs_mois_present_numerique:
 
-				if mois_demande in bloc:
+				if mois_demande in bloc_mois: # la créature est disponible ce mois-ci
 
-					creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+					for bloc_heure in blocs_heures_present_numerique:
 
-					liste_creatures_presentes.append(creature)
+						#print(heure_demande, bloc_heure)
+
+						if heure_demande in bloc_heure: # la créature est disponible ce mois-ci
+
+							creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+							liste_creatures_presentes.append(creature)
 
 	return liste_creatures_presentes
+
+
+def tous_creatures_du_moment():
+
+	index_mois = {'fish':6, 'bugs':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+
+	index_heures = {'fish':7, 'bugs':6} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+
+	creatures_du_moment = []
+
+	creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24)
+
+	#print(creatures_dispo_maintenant)
+
+	for creature in creatures_dispo_maintenant:
+
+		nom = creature[1]
+
+		le_type = traduction[creature[0]]
+
+		endroit = creature[4]
+
+		heure = creature[index_heures[creature[0]]]
+
+		mois = creature[index_mois[creature[0]]]
+
+		a_ajouter = le_type + ' - ' + nom + ': ' + endroit + ', ' + heure + ', ' + mois
+
+		creatures_du_moment.append(a_ajouter)
+
+	return creatures_du_moment
 
 
 ###############
@@ -293,7 +439,7 @@ Afficher un menu de choix d'opérations
 #print(listes_critters["fish"][12])
 
 #print(test)
-
+'''
 creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24)
 
 print(creatures_dispo_maintenant)
@@ -306,10 +452,18 @@ for creature in creatures_dispo_maintenant:
 
 	endroit = creature[4]
 
+	#heure = 
+
 	print(le_type, '-', nom + ':', endroit)
 
 
+'''
 
+creatures_maintenants = tous_creatures_du_moment()
+
+for creature in creatures_maintenants:
+
+	print(creature)
 
 
 
