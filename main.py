@@ -124,10 +124,28 @@ def load_critters(nom_fichier):
 
 
 
+def nommer_mois(mois):
 
-#def nommer_mois(mois):
+	return noms_mois[mois]
 
 
+def mois_explicites(mois_texte):
+
+	# separer les deux morceaux
+
+	mois_texte = mois_texte.replace(" ", "")
+
+	liste_mois = mois_texte.split("-")
+
+	print(liste_mois)
+
+	# determiner le premier mois en chiffre
+
+	# determiner le deuxième mois en chiffre
+
+	# compléter la séquence
+
+	# retourner la liste complète
 
 
 ###############
@@ -160,6 +178,8 @@ Afficher un menu de choix d'opérations
 '''
 
 #print(listes_critters["fish"][3])
+
+mois_explicites(listes_critters["fish"][0][5])
 
 
 
