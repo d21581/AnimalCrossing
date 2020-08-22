@@ -148,7 +148,7 @@ def mois_explicites(mois_texte):
 
 	if mois_texte == 'All year':
 
-		return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		return [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]]
 
 	# separer les morceaux (d'abord les blocs, ensuites les premier et derniers mois)
 
@@ -157,6 +157,8 @@ def mois_explicites(mois_texte):
 	blocs = mois_texte.split(",") # certaines créatures ont plusieurs blocs de mois de présences
 
 	# print(liste_mois)
+
+	# determiner le premier et dernier mois en chiffre et compléter la séquence (remplir les mois entre deux)
 
 	i = 0
 
@@ -170,23 +172,60 @@ def mois_explicites(mois_texte):
 
 		#print(premier_mois)
 
-		deuxieme_mois = mois_numerique[deux_mois_lettres[1]]
+		gauche = premier_mois
 
-		#print(deuxieme_mois)
+		liste_temp = [gauche]
 
-		blocs[i] = [premier_mois, deuxieme_mois]
+		if len(deux_mois_lettres) > 1:
+
+			deuxieme_mois = mois_numerique[deux_mois_lettres[1]]
+
+			#print(deuxieme_mois)
+
+			while gauche + 1 < deuxieme_mois:
+
+				gauche += 1
+
+				liste_temp.append(gauche)
+
+			liste_temp.append(deuxieme_mois)
+
+		blocs[i] = liste_temp
 
 		i += 1
 
-	print(blocs)
-
-	# determiner le premier mois en chiffre
-
-	# determiner le deuxième mois en chiffre
-
-	# compléter la séquence
+	#print(blocs)
 
 	# retourner la liste complète
+
+	return blocs
+
+
+def creatures_maintenant(mois_demande, heure_demande):
+
+	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+
+	mois_present_texte = ''
+
+	liste_creatures_presentes = []
+
+	for type_creature in critters: # poisson et insecte
+
+		for creature in listes_critters[type_creature]:
+
+			mois_present_texte = creature[index_mois[type_creature]]
+
+			blocs_mois_present_numerique = mois_explicites(mois_present_texte)
+
+			print(creature[0], blocs_mois_present_numerique)
+
+			for bloc in blocs_mois_present_numerique:
+
+				if mois_demande in bloc:
+
+					liste_creatures_presentes.append(creature[0])
+
+	return liste_creatures_presentes
 
 
 ###############
@@ -220,8 +259,13 @@ Afficher un menu de choix d'opérations
 
 #print(listes_critters["fish"][3])
 
-mois_explicites(listes_critters["fish"][12][5])
+test = mois_explicites(listes_critters["fish"][12][5])
+
 print(listes_critters["fish"][12])
+
+print(test)
+
+creatures_maintenant(mois_format_12, heure_format_24)
 
 
 
