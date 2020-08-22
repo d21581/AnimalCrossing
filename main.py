@@ -106,6 +106,11 @@ critters = ['fish', 'bugs']
 
 listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
 
+traduction = {
+	'fish': 'poisson',
+	'bugs': 'insecte'
+}
+
 
 ###############
 # Les fonctions
@@ -122,6 +127,8 @@ def load_critters(nom_fichier):
 		while fini != 1:
 
 			info_ligne = fichier.readline()
+
+			info_ligne = info_ligne.replace('\n', '') # enlever le symbole de nouvelle ligne
 
 			if info_ligne != '':
 
@@ -176,17 +183,37 @@ def mois_explicites(mois_texte):
 
 		liste_temp = [gauche]
 
-		if len(deux_mois_lettres) > 1:
+		if len(deux_mois_lettres) > 1: # il a plus d'un mois dans le bloc
 
 			deuxieme_mois = mois_numerique[deux_mois_lettres[1]]
 
 			#print(deuxieme_mois)
 
-			while gauche + 1 < deuxieme_mois:
+			# vérifier que ça ne passe pas à travers décembre
 
-				gauche += 1
+			if gauche > deuxieme_mois: # le bloc commence avant décembre et continue dans la nouvelle année
 
-				liste_temp.append(gauche)
+				while gauche < 12: # remplir la liste jusqu'au mois décembre
+
+					gauche += 1
+
+					liste_temp.append(gauche)
+
+				gauche = 0 # changer à janvier
+
+				while gauche + 1 < deuxieme_mois:
+
+					gauche += 1
+
+					liste_temp.append(gauche)								
+
+			if gauche < deuxieme_mois:
+
+				while gauche + 1 < deuxieme_mois:
+
+					gauche += 1
+
+					liste_temp.append(gauche)
 
 			liste_temp.append(deuxieme_mois)
 
@@ -217,13 +244,15 @@ def creatures_maintenant(mois_demande, heure_demande):
 
 			blocs_mois_present_numerique = mois_explicites(mois_present_texte)
 
-			print(creature[0], blocs_mois_present_numerique)
+			#print(creature[0], blocs_mois_present_numerique)
 
 			for bloc in blocs_mois_present_numerique:
 
 				if mois_demande in bloc:
 
-					liste_creatures_presentes.append(creature[0])
+					creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+					liste_creatures_presentes.append(creature)
 
 	return liste_creatures_presentes
 
@@ -259,13 +288,25 @@ Afficher un menu de choix d'opérations
 
 #print(listes_critters["fish"][3])
 
-test = mois_explicites(listes_critters["fish"][12][5])
+#test = mois_explicites(listes_critters["fish"][12][5])
 
-print(listes_critters["fish"][12])
+#print(listes_critters["fish"][12])
 
-print(test)
+#print(test)
 
-creatures_maintenant(mois_format_12, heure_format_24)
+creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24)
+
+print(creatures_dispo_maintenant)
+
+for creature in creatures_dispo_maintenant:
+
+	nom = creature[1]
+
+	le_type = traduction[creature[0]]
+
+	endroit = creature[4]
+
+	print(le_type, '-', nom + ':', endroit)
 
 
 
