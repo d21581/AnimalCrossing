@@ -87,6 +87,11 @@ noms_mois = {
 	12: "décembre"
 }
 
+critters = ['fish', 'bugs']
+
+listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
+
+
 ###############
 # Les fonctions
 ###############
@@ -107,7 +112,7 @@ def load_critters(nom_fichier):
 
 				info_ligne = info_ligne.split(";")
 
-				print(info_ligne)
+				#print(info_ligne)
 
 				liste.append(info_ligne)
 
@@ -117,11 +122,7 @@ def load_critters(nom_fichier):
 
 	return liste
 
-test = load_critters("fish2.txt")
 
-print('ici')
-
-print(test[4])
 
 
 #def nommer_mois(mois):
@@ -139,7 +140,11 @@ poissons et insectes manquants disponible en ce momant
 pour chacun d'eux.
 '''
 
+for critter in critters:
 
+	ficher_critter = critter + '2.txt'
+
+	listes_critters[critter] = load_critters(ficher_critter)
 
 
 print('**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************')
@@ -154,7 +159,7 @@ Afficher un menu de choix d'opérations
 6) effacer un joueur
 '''
 
-
+#print(listes_critters["fish"][3])
 
 
 
