@@ -87,6 +87,21 @@ noms_mois = {
 	12: "décembre"
 }
 
+mois_numerique = {
+	"January": 1,
+	"February": 2,
+	"March": 3,
+	"April": 4,
+	"May": 5,
+	"June": 6,
+	"July": 7,
+	"August": 8,
+	"September": 9,
+	"October": 10,
+	"November": 11,
+	"December": 12
+}
+
 critters = ['fish', 'bugs']
 
 listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
@@ -131,13 +146,39 @@ def nommer_mois(mois):
 
 def mois_explicites(mois_texte):
 
-	# separer les deux morceaux
+	if mois_texte == 'All year':
 
-	mois_texte = mois_texte.replace(" ", "")
+		return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-	liste_mois = mois_texte.split("-")
+	# separer les morceaux (d'abord les blocs, ensuites les premier et derniers mois)
 
-	print(liste_mois)
+	mois_texte = mois_texte.replace(" ", "") # enlever les espaces inutiles
+
+	blocs = mois_texte.split(",") # certaines créatures ont plusieurs blocs de mois de présences
+
+	# print(liste_mois)
+
+	i = 0
+
+	for bloc in blocs:
+
+		deux_mois_lettres = bloc.split("-")
+
+		#print(deux_mois_lettres[0])
+
+		premier_mois = mois_numerique[deux_mois_lettres[0]]
+
+		#print(premier_mois)
+
+		deuxieme_mois = mois_numerique[deux_mois_lettres[1]]
+
+		#print(deuxieme_mois)
+
+		blocs[i] = [premier_mois, deuxieme_mois]
+
+		i += 1
+
+	print(blocs)
 
 	# determiner le premier mois en chiffre
 
@@ -179,7 +220,8 @@ Afficher un menu de choix d'opérations
 
 #print(listes_critters["fish"][3])
 
-mois_explicites(listes_critters["fish"][0][5])
+mois_explicites(listes_critters["fish"][12][5])
+print(listes_critters["fish"][12])
 
 
 
