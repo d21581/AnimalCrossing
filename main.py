@@ -385,13 +385,15 @@ def ajouter_creature_capture(joueur):
 
 			if creature[1] not in acquis:
 
-				creatures_pas_capture.update({indice_num:creature[1]})
+				if creature[1] not in creatures_pas_capture.values(): # eviter les duplicats (possible à cause des créatures qui ont plusieurs blocs de présences)
 
-				indice_num += 1
+					creatures_pas_capture.update({indice_num:creature[1]})
+
+					indice_num += 1
 
 		# Afficher en grille
 
-		#nombre_total_creature = len(creatures_pas_capture)
+		nombre_total_creature = len(creatures_pas_capture)
 
 		for key in creatures_pas_capture:
 
@@ -423,21 +425,53 @@ def ajouter_creature_capture(joueur):
 
 		print(info_a_imprimmer)
 
-		veut_ajouter = input("\nQu'avez-vous capturé? (separez chaque creature par un espace, e.g. '1 3 23') ")
+		veut_ajouter = input("\nQu'avez-vous capturé? (separez chaque creature par un espace, e.g. '1 3 23') [0 - annuler] ")
 
-		indice_a_ajouter = veut_ajouter.split(' ')
+		if veut_ajouter != '0' and veut_ajouter != 0:
 
-		ligne_a_ajouter = ''
+			indice_a_ajouter = veut_ajouter.split(' ')
 
-		for num_creature in indice_a_ajouter:
+			ligne_a_ajouter = ''
 
-			ligne_a_ajouter += ';' + creatures_pas_capture[int(num_creature)]
+			for num_creature in indice_a_ajouter:
 
-		print(ligne_a_ajouter)
+				ligne_a_ajouter += ';' + creatures_pas_capture[int(num_creature)]
 
-		# Enregistrer l'information dans le fichier.
+			# Enregistrer l'information dans le fichier.
 
-		fichier.write(ligne_a_ajouter)
+			fichier.write(ligne_a_ajouter)
+
+			fichier.close()
+
+			message_success = '\n'
+
+			i = 1
+
+			max = len(indice_a_ajouter)
+
+			for num_creature in indice_a_ajouter:
+
+				message_success += creatures_pas_capture[int(num_creature)]
+
+				if i < max - 1:
+
+					message_success += ', '
+
+				if i == max - 1:
+
+					message_success += ' et '
+
+				i += 1
+
+			message_success += ' ajouté(es) avec succès.'
+
+			print(message_success)
+
+		if veut_ajouter == 0 or veut_ajouter == '0':
+
+			print('\nOk. Opération annulée. Aucune créature ajouré à la liste de créatures capturées.')
+
+			fichier.close()
 
 
 def tous_creatures_du_moment(joueur=''):
@@ -553,7 +587,7 @@ for critter in critters:
 	listes_critters[critter] = load_critters(ficher_critter)
 
 
-print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************')
+print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************\n')
 
 '''
 Afficher un menu de choix d'opérations
