@@ -333,7 +333,7 @@ def mois_explicites(mois_texte):
 	return blocs
 
 
-def creatures_maintenant(mois_demande, heure_demande, joueur='', exhaustive=0):
+def creatures_moment_precise(mois_demande='Zeus', heure_demande='Zeus', joueur='', exhaustive=0): #était creatures_maintenant(mois_demande='Zeus', heure_demande='Zeus', joueur='', exhaustive=0)
 
 	# Retourne une liste des créatures présente. Si aucun joueur n'est spécifié, c'est la liste complète pour le moment présent.
 
@@ -355,46 +355,58 @@ def creatures_maintenant(mois_demande, heure_demande, joueur='', exhaustive=0):
 
 		for creature in listes_critters[type_creature]:
 
-			mois_present_texte = creature[index_mois[type_creature]]
+			if exhaustive == 0: # seulement si la liste exhaustive n'est pas demandé
 
-			heures_present_texte = creature[index_heures[type_creature]]
+				mois_present_texte = creature[index_mois[type_creature]]
 
-			blocs_mois_present_numerique = mois_explicites(mois_present_texte)
+				heures_present_texte = creature[index_heures[type_creature]]
 
-			blocs_heures_present_numerique = heures_explicites(heures_present_texte)
+				blocs_mois_present_numerique = mois_explicites(mois_present_texte)
+
+				blocs_heures_present_numerique = heures_explicites(heures_present_texte)
 
 			#print(creature[0], blocs_mois_present_numerique)
 
-			for bloc_mois in blocs_mois_present_numerique:
+			if exhaustive == 0:
 
-				if mois_demande in bloc_mois: # la créature est disponible ce mois-ci
+				for bloc_mois in blocs_mois_present_numerique:
 
-					for bloc_heure in blocs_heures_present_numerique:
+					if mois_demande in bloc_mois: # la créature est disponible ce mois-ci
 
-						#print(heure_demande, bloc_heure)
+						for bloc_heure in blocs_heures_present_numerique:
 
-						if heure_demande in bloc_heure: # la créature est disponible ce mois-ci
+							#print(heure_demande, bloc_heure)
 
-							if joueur == '':
+							if heure_demande in bloc_heure: # la créature est disponible ce mois-ci
 
-								creature.insert(0, type_creature) # réarrange l'ordre de l'information.
-
-								liste_creatures_presentes.append(creature)
-
-							else:
-
-								if creature[0] not in creature_deja_capture:
+								if joueur == '':
 
 									creature.insert(0, type_creature) # réarrange l'ordre de l'information.
 
 									liste_creatures_presentes.append(creature)
+
+								else:
+
+									if creature[0] not in creature_deja_capture:
+
+										creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+										liste_creatures_presentes.append(creature)
+
+			if exhaustive == 1:
+
+				#print('debug->', creature)
+
+				creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+				liste_creatures_presentes.append(creature)
 
 	return liste_creatures_presentes
 
 
 def ajouter_creature_capture(joueur):
 
-	nom_fichier = joueur + '.txt'
+	fichier_joueur = joueur + '.txt'
 
 	# Afficher la liste des créatures qui peuvent être ajouté:
 
@@ -402,14 +414,23 @@ def ajouter_creature_capture(joueur):
 
 	acquis = deja_capture(joueur)
 
-	with open(nom_fichier, 'a+') as fichier:
-	
+	liste_exaustive = creatures_moment_precise(exhaustive=1)
+
+	liste_creatures_pas_capture = []
+
+	with open(fichier_joueur, 'a+') as fichier:
 
 		# Afficher les créatures restantes
 
+		for creature in liste_exaustive:
+
+			if creature[1] not in acquis:
+
+				liste_creatures_pas_capture.append(creature[1])
 
 
-		info = 'test'
+
+		info = ''
 
 		# Enregistrer l'information dans le fichier.
 
@@ -426,7 +447,7 @@ def tous_creatures_du_moment(joueur=''):
 
 	creatures_du_moment = []
 
-	creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24, joueur)
+	creatures_dispo_maintenant = creatures_moment_precise(mois_format_12, heure_format_24, joueur)
 
 	#print(creatures_dispo_maintenant)
 
@@ -450,6 +471,8 @@ def tous_creatures_du_moment(joueur=''):
 
 
 def deja_capture(joueur):
+
+	# Retourne le nom des créatures déjà capturé par un joueur spécifique
 
 	nom_fichier = joueur + '.txt'
 
@@ -567,10 +590,16 @@ for creature in creatures_dispo_maintenant:
 '''
 
 
-afficher_liste_demande('david')
+#afficher_liste_demande('david')
 
-ajouter_creature_capture('grosjambon')
+ajouter_creature_capture('david')
+'''
+testytest = creatures_moment_precise(exhaustive=1)
 
+for crit in testytest:
+
+	print(crit)
+'''
 
 
 
