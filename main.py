@@ -569,10 +569,82 @@ def afficher_liste_demande(joueur=''):
 		print(creature)
 
 
+def pauser():
+
+	poubelle = input("\nAppuyez sur 'Entrer' pour continuer...\n")
+
+
+def menu_principale():
+
+	choix_fait = -1
+
+	while choix_fait != '0':
+
+		choix_menu_principale = {
+			1:'Afficher la liste des créatures pour un joueur spécifique.',
+			2:'Afficher la liste exhaustive des créatures.',
+			3:'Afficher toutes les créatures présentes en ce moment',
+			4:'Ajouter une/des créature(s) à la liste d\'un joueur spécifique',
+			0:'Quitter'
+		}
+
+		print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************\n')
+
+		for critter in critters:
+
+			ficher_critter = critter + '2.txt'
+
+			listes_critters[critter] = load_critters(ficher_critter)
+
+		print('Veuillez choisir parmis les options suivantes:\n')
+
+		for un_choix in choix_menu_principale:
+
+			print(' ', str(un_choix) + ') ' + choix_menu_principale[un_choix])
+
+		choix_fait = input("\nQue voulez-vous faire? [0 - Quitter] ")
+
+		if choix_fait == '1':
+
+			print('\nPour quel joueur?\n')
+
+			les_joueurs_possibles = ''
+
+			num = 1
+
+			for joueur in les_joueurs:
+
+				les_joueurs_possibles += '  ' + str(num) + ') ' + joueur + '\n'
+
+				num += 1
+
+			print(les_joueurs_possibles)
+
+			joueur_choisis = input('? ')
+
+			afficher_liste_demande(les_joueurs[int(joueur_choisis)-1])
+
+			pauser()
+
+		if choix_fait == '2':
+
+			a_afficher = creatures_moment_precise(exhaustive=1)
+
+			print()
+
+			for creature in a_afficher:
+
+				print(creature[1] + ', ' + creature[2] + ', ' + creature[3] + ', ' + creature[4])
+
+			pauser()
+
+	print('\nBonne chasse!\n')
 
 ###############
 # Le programme
 ###############
+
+menu_principale()
 
 '''
 afficher l'heure actuelle, le nom de chaque joueur et les 
@@ -580,14 +652,10 @@ poissons et insectes manquants disponible en ce momant
 pour chacun d'eux.
 '''
 
-for critter in critters:
-
-	ficher_critter = critter + '2.txt'
-
-	listes_critters[critter] = load_critters(ficher_critter)
 
 
-print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************\n')
+
+
 
 '''
 Afficher un menu de choix d'opérations
@@ -629,7 +697,7 @@ for creature in creatures_dispo_maintenant:
 
 #afficher_liste_demande('david')
 
-ajouter_creature_capture('david')
+#ajouter_creature_capture('david')
 '''
 testytest = creatures_moment_precise(exhaustive=1)
 
