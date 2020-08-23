@@ -126,6 +126,8 @@ traduction = {
 	'bugs': 'insecte'
 }
 
+les_joueurs = ['david', 'aurelie', 'marianne', 'florence']
+
 
 ###############
 # Les fonctions
@@ -331,7 +333,9 @@ def mois_explicites(mois_texte):
 	return blocs
 
 
-def creatures_maintenant(mois_demande, heure_demande):
+def creatures_maintenant(mois_demande, heure_demande, joueur=''):
+
+	# Retourne une liste des créatures présente. Si aucun joueur n'est spécifié, c'est la liste complète pour le moment présent.
 
 	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
@@ -341,7 +345,11 @@ def creatures_maintenant(mois_demande, heure_demande):
 
 	liste_creatures_presentes = []
 
-	for type_creature in critters: # poisson et insecte
+	if joueur != '':
+
+		creature_deja_capture = deja_capture(joueur)
+
+	for type_creature in critters: # poisson et insecte ('fish' et 'bugs')
 
 		for creature in listes_critters[type_creature]:
 
@@ -365,14 +373,26 @@ def creatures_maintenant(mois_demande, heure_demande):
 
 						if heure_demande in bloc_heure: # la créature est disponible ce mois-ci
 
-							creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+							if joueur == '':
 
-							liste_creatures_presentes.append(creature)
+								creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+								liste_creatures_presentes.append(creature)
+
+							else:
+
+								if creature[0] not in creature_deja_capture:
+
+									creature.insert(0, type_creature) # réarrange l'ordre de l'information.
+
+									liste_creatures_presentes.append(creature)
 
 	return liste_creatures_presentes
 
 
-def tous_creatures_du_moment():
+def tous_creatures_du_moment(joueur=''):
+
+	# Formarter et lister les créatures à afficher
 
 	index_mois = {'fish':6, 'bugs':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
@@ -380,7 +400,7 @@ def tous_creatures_du_moment():
 
 	creatures_du_moment = []
 
-	creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24)
+	creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24, joueur)
 
 	#print(creatures_dispo_maintenant)
 
@@ -403,6 +423,57 @@ def tous_creatures_du_moment():
 	return creatures_du_moment
 
 
+def deja_capture(joueur):
+
+	nom_fichier = joueur + '.txt'
+
+	liste = []
+
+	with open(nom_fichier, 'r') as fichier:
+
+		info = fichier.read()
+
+		info = info.replace('\n', '') # enlever le symbole de nouvelle ligne
+
+		if info != '':
+
+			info = info.split(";")
+
+			#print(info_ligne)
+
+			liste = info
+
+	return liste
+
+
+def afficher_liste_demande(joueur=''):
+
+	creatures_maintenants = tous_creatures_du_moment(joueur)
+
+	type_affiche = ''
+
+	if joueur == '':
+
+		print('\n -- Liste complète: --')
+
+	else:
+
+		print('\n -- Liste personalisé pour ' + joueur + ': --')
+
+	for creature in creatures_maintenants:
+
+		type_de_la_creature = creature[:7]
+
+		if type_de_la_creature != type_affiche:
+
+			print('\nLes ' + type_de_la_creature + 's:\n')
+
+			type_affiche = type_de_la_creature
+
+		print(creature)
+
+
+
 ###############
 # Le programme
 ###############
@@ -420,7 +491,7 @@ for critter in critters:
 	listes_critters[critter] = load_critters(ficher_critter)
 
 
-print('**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************')
+print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************')
 
 '''
 Afficher un menu de choix d'opérations
@@ -459,13 +530,8 @@ for creature in creatures_dispo_maintenant:
 
 '''
 
-creatures_maintenants = tous_creatures_du_moment()
 
-for creature in creatures_maintenants:
-
-	print(creature)
-
-
+afficher_liste_demande('david')
 
 
 
