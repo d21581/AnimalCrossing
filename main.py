@@ -2,58 +2,7 @@
 # Les importations:
 ###################
 
-import datetime
-'''
-with open('fish.txt', 'r') as fichier_bugs:
-
-	total_number_of_lines = 521 #len(fichier_bugs.readlines())
-
-	#print(total_number_of_lines)
-
-	lines_to_read = 9
-
-	compteur_lignes = 0
-
-	nouveau_fichier = ''
-
-	while compteur_lignes < total_number_of_lines:
-
-		compteur_lignes_block = 0
-
-		nouvelle_ligne = ''
-
-		while compteur_lignes_block < lines_to_read: 
-
-			info_ligne = fichier_bugs.readline()
-
-			info_ligne = info_ligne.replace("\n", "")
-
-			#print(str(compteur_lignes) + '/' + str(total_number_of_lines), compteur_lignes_block, info_ligne + '')
-
-			if compteur_lignes_block < 7:
-
-				nouvelle_ligne = nouvelle_ligne + info_ligne + ';'
-
-			if compteur_lignes_block == 7:
-
-				if info_ligne != '': # il y a un commentaire
-
-					nouvelle_ligne = nouvelle_ligne + info_ligne + ";\n"
-
-				else: #fin du bloc parce qu'il n'y a pas de commentaires
-
-					nouvelle_ligne = nouvelle_ligne + ";\n"
-
-					break;
-
-			compteur_lignes_block = compteur_lignes_block + 1
-
-			compteur_lignes = compteur_lignes + 1
-
-		nouveau_fichier = nouveau_fichier + nouvelle_ligne
-
-		#print('nouvelle ligne: ' + nouvelle_ligne)
-'''
+import datetime, sys
 
 
 ########################
@@ -416,7 +365,17 @@ def ajouter_creature_capture(joueur):
 
 	liste_exaustive = creatures_moment_precise(exhaustive=1)
 
-	liste_creatures_pas_capture = []
+	creatures_pas_capture = {}
+
+	indice_num = 1
+
+	col = 1
+
+	largeur_colone = 25
+
+	espaceur = ''
+
+	info_a_imprimmer = ''
 
 	with open(fichier_joueur, 'a+') as fichier:
 
@@ -426,15 +385,59 @@ def ajouter_creature_capture(joueur):
 
 			if creature[1] not in acquis:
 
-				liste_creatures_pas_capture.append(creature[1])
+				creatures_pas_capture.update({indice_num:creature[1]})
 
+				indice_num += 1
 
+		# Afficher en grille
 
-		info = ''
+		#nombre_total_creature = len(creatures_pas_capture)
+
+		for key in creatures_pas_capture:
+
+			nom_creature = creatures_pas_capture[key]
+
+			espaceur = ' ' * (largeur_colone - len(nom_creature))
+
+			if key < 99 and key > 9:
+
+				indice_num = ' ' + str(key) # ajouter un espace pour que tout s'aligne bien
+
+			if key < 10:
+
+				indice_num = '  ' + str(key) # ajouter deux espaces pour que tout s'aligne bien
+
+			if key > 99:
+
+				indice_num = str(key)
+
+			info_a_imprimmer += indice_num + ') ' + nom_creature + espaceur
+
+			col += 1
+
+			if col > 4:
+
+				col = 1
+
+				info_a_imprimmer += '\n'
+
+		print(info_a_imprimmer)
+
+		veut_ajouter = input("\nQu'avez-vous capturé? (separez chaque creature par un espace, e.g. '1 3 23') ")
+
+		indice_a_ajouter = veut_ajouter.split(' ')
+
+		ligne_a_ajouter = ''
+
+		for num_creature in indice_a_ajouter:
+
+			ligne_a_ajouter += ';' + creatures_pas_capture[int(num_creature)]
+
+		print(ligne_a_ajouter)
 
 		# Enregistrer l'information dans le fichier.
 
-		fichier.write(info)
+		fichier.write(ligne_a_ajouter)
 
 
 def tous_creatures_du_moment(joueur=''):

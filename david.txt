@@ -1,1 +1,1 @@
-Common Butterfly;Yellow Butterfly;Tiger Butterfly;Brown Cicada
+Common Butterfly;Yellow Butterfly;Tiger Butterfly;Brown Cicada;Angelfish;Tarantula;Shark;Carp
