@@ -377,6 +377,8 @@ def ajouter_creature_capture(joueur):
 
 	info_a_imprimmer = ''
 
+	le_type = ''
+
 	with open(fichier_joueur, 'a+') as fichier:
 
 		# Afficher les créatures restantes
@@ -412,7 +414,13 @@ def ajouter_creature_capture(joueur):
 			if key > 99:
 
 				indice_num = str(key)
+			'''
+			if le_type != creature[0]:
 
+				info_a_imprimmer += creature[0] + ':\n'
+
+				le_type = creature[0]
+			'''
 			info_a_imprimmer += indice_num + ') ' + nom_creature + espaceur
 
 			col += 1
@@ -496,11 +504,15 @@ def tous_creatures_du_moment(joueur=''):
 
 		endroit = creature[4]
 
+		rarete = creature[3]
+
+		valeur = creature[2]
+
 		heure = creature[index_heures[creature[0]]]
 
 		mois = creature[index_mois[creature[0]]]
 
-		a_ajouter = le_type + ' - ' + nom + ': ' + endroit + ', ' + heure + ', ' + mois
+		a_ajouter = le_type + ' - ' + nom + ': ' + endroit + ', ' + heure + ', ' + mois + ', ' + rarete + ', ' + str(valeur) + ' bells'
 
 		creatures_du_moment.append(a_ajouter)
 
@@ -533,7 +545,7 @@ def deja_capture(joueur):
 
 	except:
 
-		print('\nLe fichier "' + nom_fichier + '" n\'existait pas. Il a donc été créé.')
+		print('\nLe fichier "' + nom_fichier + '" n\'existait pas. Il a donc été créé.\n')
 
 		fichier = open(nom_fichier, 'w+') 
 
@@ -635,6 +647,34 @@ def menu_principale():
 			for creature in a_afficher:
 
 				print(creature[1] + ', ' + creature[2] + ', ' + creature[3] + ', ' + creature[4])
+
+			pauser()
+
+		if choix_fait == '3':
+
+			afficher_liste_demande()
+
+			pauser()
+
+		if choix_fait == '4':
+
+			print('\nPour quel joueur?\n')
+
+			les_joueurs_possibles = ''
+
+			num = 1
+
+			for joueur in les_joueurs:
+
+				les_joueurs_possibles += '  ' + str(num) + ') ' + joueur + '\n'
+
+				num += 1
+
+			print(les_joueurs_possibles)
+
+			joueur_choisis = input('? ')
+
+			ajouter_creature_capture(les_joueurs[int(joueur_choisis)-1])
 
 			pauser()
 
