@@ -333,9 +333,11 @@ def mois_explicites(mois_texte):
 	return blocs
 
 
-def creatures_maintenant(mois_demande, heure_demande, joueur=''):
+def creatures_maintenant(mois_demande, heure_demande, joueur='', exhaustive=0):
 
 	# Retourne une liste des créatures présente. Si aucun joueur n'est spécifié, c'est la liste complète pour le moment présent.
+
+	# Si "exhaustive" est 1, c'est la liste la plus total qui est retourné.
 
 	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
@@ -390,6 +392,30 @@ def creatures_maintenant(mois_demande, heure_demande, joueur=''):
 	return liste_creatures_presentes
 
 
+def ajouter_creature_capture(joueur):
+
+	nom_fichier = joueur + '.txt'
+
+	# Afficher la liste des créatures qui peuvent être ajouté:
+
+	# Lister les créatures déjà capturé.
+
+	acquis = deja_capture(joueur)
+
+	with open(nom_fichier, 'a+') as fichier:
+	
+
+		# Afficher les créatures restantes
+
+
+
+		info = 'test'
+
+		# Enregistrer l'information dans le fichier.
+
+		fichier.write(info)
+
+
 def tous_creatures_du_moment(joueur=''):
 
 	# Formarter et lister les créatures à afficher
@@ -429,19 +455,29 @@ def deja_capture(joueur):
 
 	liste = []
 
-	with open(nom_fichier, 'r') as fichier:
+	try:
 
-		info = fichier.read()
+		with open(nom_fichier, 'r') as fichier:
 
-		info = info.replace('\n', '') # enlever le symbole de nouvelle ligne
+			info = fichier.read()
 
-		if info != '':
+			info = info.replace('\n', '') # enlever le symbole de nouvelle ligne
 
-			info = info.split(";")
+			if info != '':
 
-			#print(info_ligne)
+				info = info.split(";")
 
-			liste = info
+				#print(info_ligne)
+
+				liste = info
+
+	except:
+
+		print('\nLe fichier "' + nom_fichier + '" n\'existait pas. Il a donc été créé.')
+
+		fichier = open(nom_fichier, 'w+') 
+
+		fichier.close()
 
 	return liste
 
@@ -533,12 +569,7 @@ for creature in creatures_dispo_maintenant:
 
 afficher_liste_demande('david')
 
-
-
-
-
-
-
+ajouter_creature_capture('grosjambon')
 
 
 
