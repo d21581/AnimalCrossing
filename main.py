@@ -286,7 +286,7 @@ def mois_explicites(mois_texte):
 	return blocs
 
 
-def creatures_moment_precise(mois_demande='Zeus', heure_demande='Zeus', joueur='', exhaustive=0): #était creatures_maintenant(mois_demande='Zeus', heure_demande='Zeus', joueur='', exhaustive=0)
+def creatures_moment_precise(mois_demande='Zeus', heure_demande='Zeus', joueur='', exhaustive=0): 
 
 	# Retourne une liste des créatures présente. Si aucun joueur n'est spécifié, c'est la liste complète pour le moment présent.
 
@@ -511,21 +511,33 @@ def tous_creatures_du_moment(joueur=''):
 
 	for creature in creatures_dispo_maintenant:
 
-		nom = creature[1]
+		nom = le_type = endroit = rarete = valeur = heure = mois = ''
 
-		le_type = traduction[creature[0]]
+		nom = texte_couleur(creature[1] + ': ', 'yellow', [], 0)
 
-		endroit = creature[4]
+		le_type = traduction[creature[0]] + ' - '
 
-		rarete = creature[3]
+		endroit = creature[4] + texte_couleur(', ', 'yellow', [], 0)
 
-		valeur = creature[2]
+		rarete = creature[3] + texte_couleur(', ', 'yellow', [], 0)
 
-		heure = creature[index_heures[creature[0]]]
+		valeur = creature[2] + ' bells'
 
-		mois = creature[index_mois[creature[0]]]
+		print(creature[0])
 
-		a_ajouter = le_type + ' - ' + nom + ': ' + endroit + ', ' + heure + ', ' + mois + ', ' + rarete + ', ' + str(valeur) + ' bells'
+		if creature[0] == 'fish':
+			
+			ombre = creature[5] + texte_couleur(', ', 'yellow', [], 0)
+
+		if creature[0] == 'bugs':
+
+			ombre = ''
+
+		heure = creature[index_heures[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
+
+		mois = creature[index_mois[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
+
+		a_ajouter = le_type + nom + endroit + ombre + heure + mois + rarete + str(valeur)
 
 		creatures_du_moment.append(a_ajouter)
 
