@@ -4,6 +4,10 @@
 
 import datetime, sys
 
+from os import system, name # pour effacer l'écran
+
+from colorama import init # pour ajouter des couleurs au terminal
+init() # initialiser colorama
 
 ########################
 # Les variables globales
@@ -519,6 +523,18 @@ def tous_creatures_du_moment(joueur=''):
 	return creatures_du_moment
 
 
+# define our clear function 
+def effacer_ecran(): 
+  
+    # for windows 
+    if name == 'nt': 
+        _ = system('cls') 
+  
+    # for mac and linux(here, os.name is 'posix') 
+    else: 
+        _ = system('clear') 
+
+
 def deja_capture(joueur):
 
 	# Retourne le nom des créatures déjà capturé par un joueur spécifique
@@ -600,6 +616,8 @@ def menu_principale():
 			0:'Quitter'
 		}
 
+		effacer_ecran()
+
 		print('\n\n\n**********************', jour_format_30, noms_mois[mois_format_12], heure_format_long, '************************\n')
 
 		for critter in critters:
@@ -679,6 +697,8 @@ def menu_principale():
 			pauser()
 
 	print('\nBonne chasse!\n')
+
+	deinit() # remettre le terminal comme il était (sans couleurs)
 
 ###############
 # Le programme
