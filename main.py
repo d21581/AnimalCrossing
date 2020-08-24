@@ -6,8 +6,8 @@ import datetime, sys
 
 from os import system, name # pour effacer l'écran
 
-from colorama import init # pour ajouter des couleurs au terminal
-init() # initialiser colorama
+#import colorama # pour ajouter des couleurs au terminal
+from termcolor import colored
 
 ########################
 # Les variables globales
@@ -477,11 +477,11 @@ def ajouter_creature_capture(joueur):
 
 			message_success += ' ajouté(es) avec succès.'
 
-			print(message_success)
+			texte_couleur(message_success, 'green', ['bold'])
 
 		if veut_ajouter == 0 or veut_ajouter == '0':
 
-			print('\nOk. Opération annulée. Aucune créature ajouré à la liste de créatures capturées.')
+			texte_couleur('\nOk. Opération annulée. Aucune créature ajouré à la liste de créatures capturées.', 'red', ['bold'])
 
 			fichier.close()
 
@@ -590,7 +590,7 @@ def afficher_liste_demande(joueur=''):
 
 		if type_de_la_creature != type_affiche:
 
-			print('\nLes ' + type_de_la_creature + 's:\n')
+			texte_couleur('\nLes ' + type_de_la_creature + 's:\n', 'green', ['bold'])
 
 			type_affiche = type_de_la_creature
 
@@ -599,7 +599,19 @@ def afficher_liste_demande(joueur=''):
 
 def pauser():
 
-	poubelle = input("\nAppuyez sur 'Entrer' pour continuer...\n")
+	texte = colored("\nAppuyez sur 'Entrer' pour continuer...\n", 'white', attrs=['bold'])
+
+	input(texte)
+
+def texte_couleur(texte, couleur, attributs):
+
+	# texte: string
+	# couleur: string (grey, red, green, yellow, blue, magenta, cyan, white)
+	# attributs: liste de strings (bold, dark, underline, blink, reverse, concealed)
+
+	text = colored(texte, couleur, attrs=attributs) 
+			
+	print(text)
 
 
 def menu_principale():
@@ -625,8 +637,8 @@ def menu_principale():
 			ficher_critter = critter + '2.txt'
 
 			listes_critters[critter] = load_critters(ficher_critter)
-
-		print('Veuillez choisir parmis les options suivantes:\n')
+		
+		texte_couleur('Veuillez choisir parmis les options suivantes:\n', 'cyan', ['bold'])
 
 		for un_choix in choix_menu_principale:
 
@@ -636,7 +648,7 @@ def menu_principale():
 
 		if choix_fait == '1':
 
-			print('\nPour quel joueur?\n')
+			texte_couleur('\nPour quel joueur?\n', 'cyan', ['bold'])
 
 			les_joueurs_possibles = ''
 
@@ -676,7 +688,7 @@ def menu_principale():
 
 		if choix_fait == '4':
 
-			print('\nPour quel joueur?\n')
+			texte_couleur('\nPour quel joueur?\n', 'cyan', ["bold"])
 
 			les_joueurs_possibles = ''
 
@@ -697,8 +709,6 @@ def menu_principale():
 			pauser()
 
 	print('\nBonne chasse!\n')
-
-	deinit() # remettre le terminal comme il était (sans couleurs)
 
 ###############
 # Le programme
@@ -727,44 +737,7 @@ Afficher un menu de choix d'opérations
 6) effacer un joueur
 '''
 
-#print(listes_critters["fish"][3])
 
-#test = mois_explicites(listes_critters["fish"][12][5])
-
-#print(listes_critters["fish"][12])
-
-#print(test)
-'''
-creatures_dispo_maintenant = creatures_maintenant(mois_format_12, heure_format_24)
-
-print(creatures_dispo_maintenant)
-
-for creature in creatures_dispo_maintenant:
-
-	nom = creature[1]
-
-	le_type = traduction[creature[0]]
-
-	endroit = creature[4]
-
-	#heure = 
-
-	print(le_type, '-', nom + ':', endroit)
-
-
-'''
-
-
-#afficher_liste_demande('david')
-
-#ajouter_creature_capture('david')
-'''
-testytest = creatures_moment_precise(exhaustive=1)
-
-for crit in testytest:
-
-	print(crit)
-'''
 
 
 
