@@ -70,13 +70,14 @@ heures_24 = {
 	'12PM': 0
 }
 
-critters = ['fish', 'bugs']
+critters = ['fish', 'bugs', 'deepsea']
 
 listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
 
 traduction = {
 	'fish': 'Poisson(s)',
-	'bugs': 'Insecte(s)'
+	'bugs': 'Insecte(s)',
+	'deepsea': 'Créature(s) de fond'
 }
 
 les_joueurs = ['david', 'aurelie', 'marianne', 'florence']
@@ -294,9 +295,9 @@ def creatures_moment_precise(mois_demande='Zeus', heure_demande='Zeus', joueur='
 
 	# Si "exhaustive" est 1, c'est la liste la plus total qui est retourné.
 
-	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+	index_mois = {'fish':5, 'bugs':4, 'deepsea':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
-	index_heures = {'fish':6, 'bugs':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+	index_heures = {'fish':6, 'bugs':5, 'deepsea':6} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
 	mois_present_texte = ''
 
@@ -499,9 +500,9 @@ def tous_creatures_du_moment(joueur=''):
 
 	# Formarter et lister les créatures à afficher
 
-	index_mois = {'fish':6, 'bugs':5} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+	index_mois = {'fish':6, 'bugs':5, 'deepsea':6} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
-	index_heures = {'fish':7, 'bugs':6} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
+	index_heures = {'fish':7, 'bugs':6, 'deepsea':7} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
 
 	creatures_du_moment = []
 
@@ -521,18 +522,32 @@ def tous_creatures_du_moment(joueur=''):
 
 		rarete = creature[3] + texte_couleur(', ', 'yellow', [], 0)
 
-		valeur = creature[2] + ' bells'
+		if creature[0] == 'fish' or creature[0] == 'bugs':
+			
+			rarete = creature[3] + texte_couleur(', ', 'yellow', [], 0)
 
-		print(creature[0])
+		if creature[0] == 'deepsea':
 
-		if creature[0] == 'fish':
+			rarete = ''
+
+		valeur = creature[2]
+
+		if int(valeur) > 999:
+
+			valeur = texte_couleur(str(valeur), 'white', ['bold', 'underline'], 0)
+
+		valeur = valeur + ' bells'
+
+		#print(creature[0])
+
+		if creature[0] == 'fish' or creature[0] == 'deepsea':
 			
 			ombre = creature[5] + texte_couleur(', ', 'yellow', [], 0)
-
+		'''
 		if creature[0] == 'bugs':
 
 			ombre = ''
-
+		'''
 		heure = creature[index_heures[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
 
 		mois = creature[index_mois[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
@@ -607,11 +622,19 @@ def afficher_liste_demande(joueur=''):
 
 	for creature in creatures_maintenants:
 
-		type_de_la_creature = creature[:7]
+		nom_type_complet = creature[:19]
+
+		if nom_type_complet[:7] == 'Poisson' or nom_type_complet[:7] == 'Insecte':
+
+			type_de_la_creature = nom_type_complet[:7] + '(s)'
+
+		if nom_type_complet[:7] == 'Créatur':
+
+			type_de_la_creature = nom_type_complet
 
 		if type_de_la_creature != type_affiche:
 
-			texte_couleur('\nLes ' + type_de_la_creature + 's:\n', 'green', ['bold'])
+			texte_couleur('\nLes ' + type_de_la_creature + ':\n', 'green', ['bold'])
 
 			type_affiche = type_de_la_creature
 
