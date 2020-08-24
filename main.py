@@ -75,8 +75,8 @@ critters = ['fish', 'bugs']
 listes_critters = {} # listes_critters["fish"] pour la liste complète ou listes_critters["fish"][3] pour le Barbel Steed
 
 traduction = {
-	'fish': 'poisson',
-	'bugs': 'insecte'
+	'fish': 'Poisson(s)',
+	'bugs': 'Insecte(s)'
 }
 
 les_joueurs = ['david', 'aurelie', 'marianne', 'florence']
@@ -290,6 +290,8 @@ def creatures_moment_precise(mois_demande='Zeus', heure_demande='Zeus', joueur='
 
 	# Retourne une liste des créatures présente. Si aucun joueur n'est spécifié, c'est la liste complète pour le moment présent.
 
+	# exemple: ['fish', 'Arapaima', '10000', 'Rare', 'River', 'Large', 'July - September', '4PM-9AM', '']
+
 	# Si "exhaustive" est 1, c'est la liste la plus total qui est retourné.
 
 	index_mois = {'fish':5, 'bugs':4} # les poissons ont un champs d'information supplémentaire (taille de l'ombre)
@@ -367,7 +369,7 @@ def ajouter_creature_capture(joueur):
 
 	acquis = deja_capture(joueur)
 
-	liste_exaustive = creatures_moment_precise(exhaustive=1)
+	liste_exaustive = creatures_moment_precise(exhaustive=1) #['fish', 'Arapaima', '10000', 'Rare', 'River', 'Large', 'July - September', '4PM-9AM', '']
 
 	creatures_pas_capture = {}
 
@@ -393,7 +395,7 @@ def ajouter_creature_capture(joueur):
 
 				if creature[1] not in creatures_pas_capture.values(): # eviter les duplicats (possible à cause des créatures qui ont plusieurs blocs de présences)
 
-					creatures_pas_capture.update({indice_num:creature[1]})
+					creatures_pas_capture.update({indice_num:[creature[1], creature[0]]}) #{indice_num:creature[1]}
 
 					indice_num += 1
 
@@ -403,7 +405,9 @@ def ajouter_creature_capture(joueur):
 
 		for key in creatures_pas_capture:
 
-			nom_creature = creatures_pas_capture[key]
+			nom_creature = creatures_pas_capture[key][0]
+
+			type_creature = creatures_pas_capture[key][1]
 
 			espaceur = ' ' * (largeur_colone - len(nom_creature))
 
@@ -418,13 +422,16 @@ def ajouter_creature_capture(joueur):
 			if key > 99:
 
 				indice_num = str(key)
-			'''
-			if le_type != creature[0]:
+			
+			if le_type != type_creature:
 
-				info_a_imprimmer += creature[0] + ':\n'
+				txt_couleur = texte_couleur('\n\n  ' + traduction[type_creature] + ':\n', 'green', ['bold'], 0)
 
-				le_type = creature[0]
-			'''
+				#info_a_imprimmer += '\n\n  ' + traduction[type_creature] + ':\n'
+				info_a_imprimmer += txt_couleur
+
+				le_type = type_creature
+			
 			info_a_imprimmer += indice_num + ') ' + nom_creature + espaceur
 
 			col += 1
@@ -437,7 +444,9 @@ def ajouter_creature_capture(joueur):
 
 		print(info_a_imprimmer)
 
-		veut_ajouter = input("\nQu'avez-vous capturé? (separez chaque creature par un espace, e.g. '1 3 23') [0 - annuler] ")
+		txt_couleur = texte_couleur("\nQu'avez-vous capturé? (separez chaque creature par un espace, e.g. '1 3 23') [0 - annuler] ", 'magenta', ['bold'], 0)
+
+		veut_ajouter = input(txt_couleur)
 
 		if veut_ajouter != '0' and veut_ajouter != 0:
 
@@ -447,7 +456,7 @@ def ajouter_creature_capture(joueur):
 
 			for num_creature in indice_a_ajouter:
 
-				ligne_a_ajouter += ';' + creatures_pas_capture[int(num_creature)]
+				ligne_a_ajouter += ';' + creatures_pas_capture[int(num_creature)][0]
 
 			# Enregistrer l'information dans le fichier.
 
@@ -463,7 +472,7 @@ def ajouter_creature_capture(joueur):
 
 			for num_creature in indice_a_ajouter:
 
-				message_success += creatures_pas_capture[int(num_creature)]
+				message_success += creatures_pas_capture[int(num_creature)][0]
 
 				if i < max - 1:
 
@@ -603,15 +612,21 @@ def pauser():
 
 	input(texte)
 
-def texte_couleur(texte, couleur, attributs):
+def texte_couleur(texte, couleur, attributs, imprimmer=1):
 
 	# texte: string
 	# couleur: string (grey, red, green, yellow, blue, magenta, cyan, white)
 	# attributs: liste de strings (bold, dark, underline, blink, reverse, concealed)
 
 	text = colored(texte, couleur, attrs=attributs) 
-			
-	print(text)
+	
+	if imprimmer==1:
+
+		print(text)
+
+	else:
+
+		return text
 
 
 def menu_principale():
@@ -644,7 +659,9 @@ def menu_principale():
 
 			print(' ', str(un_choix) + ') ' + choix_menu_principale[un_choix])
 
-		choix_fait = input("\nQue voulez-vous faire? [0 - Quitter] ")
+		txt_couleur = texte_couleur("\nQue voulez-vous faire? [0 - Quitter] ", 'magenta', ['bold'], 0)
+
+		choix_fait = input(txt_couleur)
 
 		if choix_fait == '1':
 
@@ -662,7 +679,9 @@ def menu_principale():
 
 			print(les_joueurs_possibles)
 
-			joueur_choisis = input('? ')
+			txt_couleur = texte_couleur('...? ', 'magenta', ['bold'], 0)
+
+			joueur_choisis = input(txt_couleur)
 
 			afficher_liste_demande(les_joueurs[int(joueur_choisis)-1])
 
@@ -702,7 +721,10 @@ def menu_principale():
 
 			print(les_joueurs_possibles)
 
-			joueur_choisis = input('? ')
+			
+			txt_couleur = texte_couleur('...? ', 'magenta', ['bold'], 0)
+
+			joueur_choisis = input(txt_couleur)
 
 			ajouter_creature_capture(les_joueurs[int(joueur_choisis)-1])
 
