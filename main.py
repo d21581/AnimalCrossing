@@ -386,6 +386,8 @@ def ajouter_creature_capture(joueur):
 
 	le_type = ''
 
+	deja_ajoute_liste_a_afficher = []
+
 	with open(fichier_joueur, 'a+') as fichier:
 
 		# Afficher les créatures restantes
@@ -394,9 +396,11 @@ def ajouter_creature_capture(joueur):
 
 			if creature[1] not in acquis:
 
-				if creature[1] not in creatures_pas_capture.values(): # eviter les duplicats (possible à cause des créatures qui ont plusieurs blocs de présences)
+				if creature[1] not in deja_ajoute_liste_a_afficher: # eviter les duplicats (possible à cause des créatures qui ont plusieurs blocs de présences)
 
 					creatures_pas_capture.update({indice_num:[creature[1], creature[0]]}) #{indice_num:creature[1]}
+
+					deja_ajoute_liste_a_afficher.append(creature[1])
 
 					indice_num += 1
 
@@ -412,7 +416,7 @@ def ajouter_creature_capture(joueur):
 
 			espaceur = ' ' * (largeur_colone - len(nom_creature))
 
-			if key < 99 and key > 9:
+			if key < 100 and key > 9:
 
 				indice_num = ' ' + str(key) # ajouter un espace pour que tout s'aligne bien
 
@@ -512,7 +516,7 @@ def tous_creatures_du_moment(joueur=''):
 
 	for creature in creatures_dispo_maintenant:
 
-		nom = le_type = endroit = rarete = valeur = heure = mois = ''
+		nom = le_type = endroit = rarete = valeur = heure = mois = '' # Ne fonctionne pas
 
 		nom = texte_couleur(creature[1] + ': ', 'yellow', [], 0)
 
@@ -543,11 +547,11 @@ def tous_creatures_du_moment(joueur=''):
 		if creature[0] == 'fish' or creature[0] == 'deepsea':
 			
 			ombre = creature[5] + texte_couleur(', ', 'yellow', [], 0)
-		'''
+		
 		if creature[0] == 'bugs':
 
 			ombre = ''
-		'''
+		
 		heure = creature[index_heures[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
 
 		mois = creature[index_mois[creature[0]]] + texte_couleur(', ', 'yellow', [], 0)
