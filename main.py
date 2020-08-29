@@ -773,13 +773,46 @@ def menu_principale():
 
 		if choix_fait == '5':
 
+			choix_menu_gracie = {
+				1:'Afficher la liste exhaustive du jeu.',
+				2:'Ajouter un/des vêtement(s) à un joueur spécifique.',
+				3: 'Afficher les vêtements d\'un joueur spécifique',
+				0:'Quitter'
+			}
+
 			tous_vetements = load_fichier('gracie.txt')
 
-			for vetement in tous_vetements:
+			texte_couleur('\nVeuillez choisir parmis les options suivantes:\n', 'cyan', ['bold'])
 
-				print(vetement[0] + ' (' + vetement[1] + ', ' + vetement[2] + ')')
+			for un_choix in choix_menu_gracie:
 
-			pauser()
+				print(' ', str(un_choix) + ') ' + choix_menu_gracie[un_choix])
+
+			txt_couleur = texte_couleur("\nQue voulez-vous faire? [0 - Quitter] ", 'magenta', ['bold'], 0)
+
+			choix_gracie = input(txt_couleur)
+
+			if choix_gracie == '1':
+
+				for vetement in tous_vetements:
+
+					print(vetement[0] + ' (' + vetement[1] + ', ' + vetement[2] + ')')
+
+				pauser()
+
+			if choix_gracie == '2':
+
+				pass
+
+			if choix_gracie == '3':
+
+				texte_couleur("\nVeuillez taper le nom ou une partie du nom du vêtement en question:", 'cyan', ['bold'])
+
+				txt_couleur = texte_couleur("\n...? ", 'magenta', ['bold'], 0)
+
+				nom_vetement_chercher = input(txt_couleur)
+
+
 
 	print('\nBonne chasse!\n')
 
