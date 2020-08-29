@@ -87,7 +87,8 @@ les_joueurs = ['david', 'aurelie', 'marianne', 'florence']
 # Les fonctions
 ###############
 
-def load_critters(nom_fichier):
+
+def load_fichier(nom_fichier):
 
 	liste = []
 
@@ -679,6 +680,7 @@ def menu_principale():
 			2:'Afficher la liste exhaustive des créatures.',
 			3:'Afficher toutes les créatures présentes en ce moment',
 			4:'Ajouter une/des créature(s) à la liste d\'un joueur spécifique',
+			5: 'Gracie',
 			0:'Quitter'
 		}
 
@@ -690,7 +692,7 @@ def menu_principale():
 
 			ficher_critter = critter + '2.txt'
 
-			listes_critters[critter] = load_critters(ficher_critter)
+			listes_critters[critter] = load_fichier(ficher_critter)
 		
 		texte_couleur('Veuillez choisir parmis les options suivantes:\n', 'cyan', ['bold'])
 
@@ -766,6 +768,16 @@ def menu_principale():
 			joueur_choisis = input(txt_couleur)
 
 			ajouter_creature_capture(les_joueurs[int(joueur_choisis)-1])
+
+			pauser()
+
+		if choix_fait == '5':
+
+			tous_vetements = load_fichier('gracie.txt')
+
+			for vetement in tous_vetements:
+
+				print(vetement[0] + ' (' + vetement[1] + ', ' + vetement[2] + ')')
 
 			pauser()
 

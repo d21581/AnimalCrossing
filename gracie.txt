@@ -1,0 +1,1024 @@
+Baseball Shirt;top;Sporty
+Basketball Tank;top;Sporty
+Beatnik Shirt;top;Sporty
+Beatnik Tank;top;Sporty
+Beatnik Tee;top;Sporty
+Big Bro's Tee;top;Sporty
+Black Track Jacket;top;Sporty
+Blue Gym Tee;top;Sporty
+Blue Jacket;top;Sporty
+Blue Track Jacket;top;Sporty
+Blue-Stripe Shirt;top;Sporty
+Blue-Stripe Tee;top;Sporty
+Blue-Zap Suit;top;Sporty
+Cycling Shirt;top;Sporty
+Cycling Tee;top;Sporty
+Deep-Blue Tank;top;Sporty
+Deep-Blue Tee;top;Sporty
+Dragon Suit;top;Sporty
+Eight-Ball Tee;top;Sporty
+Explorer Tee;top;Sporty
+Firefighter Shirt;top;Sporty
+Fishing Vest;top;Sporty
+Five-Ball Tee;top;Sporty
+Four-Ball Tee;top;Sporty
+Fresh Tank;top;Sporty
+Fresh Tee;top;Sporty
+Gray Tank;top;Sporty
+Green Gym Tee;top;Sporty
+Green Warm-Up Jacket;top;Sporty
+Green-Stripe Tank;top;Sporty
+Green-Zap Suit;top;Sporty
+Jockey Shirt;top;Sporty
+Kung-Fu Shirt;top;Sporty
+Kung-Fu Tee;top;Sporty
+Li'l Bro's Tee;top;Sporty
+Matador's Jacket;top;Sporty
+MVP Shirt;top;Sporty
+MVP Tee;top;Sporty
+Nine-Ball Tee;top;Sporty
+No. 1 Shirt;top;Sporty
+No. 2 Shirt;top;Sporty
+No. 23 Shirt;top;Sporty
+No. 3 Shirt;top;Sporty
+No. 4 Shirt;top;Sporty
+No. 5 Shirt;top;Sporty
+No. 67 Shirt;top;Sporty
+One-Ball Tee;top;Sporty
+Orange Jacket;top;Sporty
+Pep-Squad Tank;top;Sporty
+Pep-Squad Tee;top;Sporty
+Racer 6 Tee;top;Sporty
+Racer Tee;top;Sporty
+Racing Shirt;top;Sporty
+Rally Tank;top;Sporty
+Rally Tee;top;Sporty
+Red Gym Tee;top;Sporty
+Red Jacket;top;Sporty
+Red Warm-Up Suit;top;Sporty
+Red-Bar Shirt;top;Sporty
+Red-Bar Tee;top;Sporty
+Red-Zap Suit;top;Sporty
+Relay Tank;top;Sporty
+Seven-Ball Tee;top;Sporty
+Six-Ball Tee;top;Sporty
+Soccer Shirt;top;Sporty
+Soccer Tee;top;Sporty
+Space Suit;top;Sporty
+Team NTDO Tee;top;Sporty
+Three-Ball Tee;top;Sporty
+Two-Ball Tee;top;Sporty
+Wrap Shirt;top;Sporty
+Wrestler Tank;top;Sporty
+Baseball Pants;bottom;Sporty
+Basketball Shorts;bottom;Sporty
+Black Track Pants;bottom;Sporty
+Blue Boxing Shorts;bottom;Sporty
+Blue Gym Shorts;bottom;Sporty
+Blue Warm-Up Pants;bottom;Sporty
+Blue-Zap Pants;bottom;Sporty
+Denim Skirt;bottom;Sporty
+Dragon Leggings;bottom;Sporty
+Explorer Pants;bottom;Sporty
+Firefighter Pants;bottom;Sporty
+Green Gym Shorts;bottom;Sporty
+Green Warm-Up Pants;bottom;Sporty
+Green-Zap Pants;bottom;Sporty
+Kung-Fu Pants;bottom;Sporty
+Matador's Pants;bottom;Sporty
+Orange Pants;bottom;Sporty
+Pep-Squad Skirt;bottom;Sporty
+Pink Sweatpants;bottom;Sporty
+Racing Pants;bottom;Sporty
+Red Boxing Shorts;bottom;Sporty
+Red Gym Shorts;bottom;Sporty
+Red Warm-Up Pants;bottom;Sporty
+Red-Zap Pants;bottom;Sporty
+Relay Shorts;bottom;Sporty
+Running Pants;bottom;Sporty
+Soccer Shorts;bottom;Sporty
+Space Pants;bottom;Sporty
+Wrestler Pants;bottom;Sporty
+Ballet Outfit;dress;Sporty
+Pink-Zap Suit;dress;Sporty
+1-Up Cap;hat;Sporty
+Bandana;hat;Sporty
+Batter's Helmet;hat;Sporty
+Bicycle Helmet;hat;Sporty
+Blue Cap;hat;Sporty
+Blue Headgear;hat;Sporty
+Blue-Zap Helmet;hat;Sporty
+Catcher's Mask;hat;Sporty
+Diver's Hood;hat;Sporty
+Explorer's Hat;hat;Sporty
+Fencing Mask;hat;Sporty
+Fireman's Hat;hat;Sporty
+Football Helmet;hat;Sporty
+Green Cap;hat;Sporty
+Green Headgear;hat;Sporty
+Green-Zap Helmet;hat;Sporty
+Jockey's Helmet;hat;Sporty
+Light-Blue Cap;hat;Sporty
+Motocross Helmet;hat;Sporty
+Pilot's Cap;hat;Sporty
+Pink-Zap Helmet;hat;Sporty
+Purple Cap;hat;Sporty
+Racing Helmet;hat;Sporty
+Red Cap;hat;Sporty
+Red Headgear;hat;Sporty
+Red Team Hat;hat;Sporty
+Red-Zap Helmet;hat;Sporty
+Retro Helmet;hat;Sporty
+Safety Helmet;hat;Sporty
+Space Helmet;hat;Sporty
+Star Cap;hat;Sporty
+Swimming Cap;hat;Sporty
+Topknot Wig;hat;Sporty
+White Cap;hat;Sporty
+White Team Hat;hat;Sporty
+Wrestling Mask;hat;Sporty
+Yellow Cap;hat;Sporty
+Bandage;accessory;Sporty
+Goggles;accessory;Sporty
+Hockey Mask;accessory;Sporty
+Snorkel Mask;accessory;Sporty
+Sporty Shades;accessory;Sporty
+Superhero Mask;accessory;Sporty
+Ballet Slippers;shoes;Sporty
+Basketball Shoes;shoes;Sporty
+Blue Wrestling Shoes;shoes;Sporty
+Cleats;shoes;Sporty
+Climbing Shoes;shoes;Sporty
+Colorful Sneakers;shoes;Sporty
+Flip-Flops;shoes;Sporty
+Green-Stripe Shoes;shoes;Sporty
+Hiking Boots;shoes;Sporty
+Orange Shoes;shoes;Sporty
+Purple High-Tops;shoes;Sporty
+Red Wrestling Shoes;shoes;Sporty
+Snow Boots;shoes;Sporty
+Yellow sneakers;shoes;Sporty
+Zap Boots;shoes;Sporty
+Blue-Stripe Tights;socks;Sporty
+Hiking Gaiters;socks;Sporty
+Leg Warmers;socks;Sporty
+Soccer Socks;socks;Sporty
+Aurora Knit Shirt;top;Cute
+Beaded Tank;top;Cute
+Bear Costume;top;Cute
+Bear Shirt;top;Cute
+Bear Tee;top;Cute
+Blossom Tee;top;Cute
+Blue Tartan Shirt;top;Cute
+Bubble Tank;top;Cute
+Bubble Tee;top;Cute
+Bubble-Gum Shirt;top;Cute
+Bubble-Gum Tee;top;Cute
+Bunny Shirt;top;Cute
+Bunny Tee;top;Cute
+Candy Gingham Shirt;top;Cute
+Candy Gingham Tee;top;Cute
+Cherry Tee;top;Cute
+Chick Tee;top;Cute
+Chocomint Tee;top;Cute
+Citrus Tank;top;Cute
+Citrus Tee;top;Cute
+Cyan Argyle Shirt;top;Cute
+Cyan Argyle Tee;top;Cute
+Daisy Tee;top;Cute
+Dazed Shirt;top;Cute
+Dazed Tee;top;Cute
+Dreamy Tee;top;Cute
+Elephant Shirt;top;Cute
+Elephant Tee;top;Cute
+Floral Knit Tee;top;Cute
+Flowery Tee;top;Cute
+Frog Costume;top;Cute
+Frog Shirt;top;Cute
+Frog Tee;top;Cute
+Funky-Dot Tank;top;Cute
+Funky-Dot Tee;top;Cute
+Garden Tank;top;Cute
+Gelato Shirt;top;Cute
+Gelato Tee;top;Cute
+Grape Tank;top;Cute
+Grape Tee;top;Cute
+Gumdrop Tee;top;Cute
+Heart Tee;top;Cute
+Icy Shirt;top;Cute
+Kids' Smock;top;Cute
+Kiwi Tank;top;Cute
+Kiwi Tee;top;Cute
+Lacy White Tank;top;Cute
+Leaf Tee;top;Cute
+Lemon Gingham Shirt;top;Cute
+Lemon Gingham Tee;top;Cute
+Lite Polka Shirt;top;Cute
+Lite Polka Tee;top;Cute
+Lotus Tee;top;Cute
+Lovely Tee;top;Cute
+Melon Gingham Shirt;top;Cute
+Melon Gingham Tee;top;Cute
+Melon Shirt;top;Cute
+Melon Tee;top;Cute
+Mint Shirt;top;Cute
+Mod Shirt;top;Cute
+Natty Shirt;top;Cute
+Natty Tee;top;Cute
+Peachy Tank;top;Cute
+Peachy Tee;top;Cute
+Pink Argyle Shirt;top;Cute
+Pink Argyle Tank;top;Cute
+Pink Argyle Tee;top;Cute
+Pink Tank;top;Cute
+Pink Tartan Shirt;top;Cute
+Pink Tartan Tee;top;Cute
+Pink Wave Tank;top;Cute
+Pink-Bud Tank;top;Cute
+Red-Check Shirt;top;Cute
+Rose Tee;top;Cute
+Rose-Sky Tee;top;Cute
+Santa Coat;top;Cute
+Shearling Coat;top;Cute
+Silk Bloom Tee;top;Cute
+Spring Shirt;top;Cute
+Spunky Knit Shirt;top;Cute
+Strawberry Tank;top;Cute
+Strawberry Tee;top;Cute
+Sunflower Tee;top;Cute
+Toad Shirt;top;Cute
+Toad Tee;top;Cute
+Tulip Tee;top;Cute
+Watermelon Shirt;top;Cute
+Watermelon Tee;top;Cute
+Winter Sweater;top;Cute
+Yellow Aloha Tee;top;Cute
+Yellow Tartan Shirt;top;Cute
+Yellow Tartan Tee;top;Cute
+Bear-Costume Pants;bottom;Cute
+Blue Polka Shorts;bottom;Cute
+Cuffed Pants;bottom;Cute
+Emerald Polka Skirt;bottom;Cute
+Frog-Costume Pants;bottom;Cute
+Funky-Dot Skirt;bottom;Cute
+Green Plaid Shorts;bottom;Cute
+Lite Polka Skirt;bottom;Cute
+Natty Skirt;bottom;Cute
+Pastel-Check Skirt;bottom;Cute
+Rainbow Plaid Shorts;bottom;Cute
+Red Plaid Skirt;bottom;Cute
+Red Polka Skirt;bottom;Cute
+Santa Pants;bottom;Cute
+White-Lace Skirt;bottom;Cute
+Blossom Dress;dress;Cute
+Blue Dotted Dress;dress;Cute
+Cat Dress;dress;Cute
+Cat Tank Dress;dress;Cute
+Citrus Gingham Dress;dress;Cute
+Dazed Dress;dress;Cute
+Dollhouse Dress;dress;Cute
+Dreamy Tank Dress;dress;Cute
+Embroidered Dress;dress;Cute
+Fairy-Tale Dress;dress;Cute
+Festive Dress;dress;Cute
+Fleece Dress;dress;Cute
+Floral Knit Dress;dress;Cute
+Fluffy Dress;dress;Cute
+Fluffy Tank Dress;dress;Cute
+Gumdrop Dress;dress;Cute
+Lime Dress;dress;Cute
+Lotus Tank Dress;dress;Cute
+Lovely Dress;dress;Cute
+Natty Dress;dress;Cute
+Overall Dress;dress;Cute
+Plaid Cami Dress;dress;Cute
+Polka-Dot Dress;dress;Cute
+Red Riding Dress;dress;Cute
+Ribbon Dress;dress;Cute
+Rose Tank Dress;dress;Cute
+Rose-Sky Tank Dress;dress;Cute
+Silk Bloom Dress;dress;Cute
+Sweater Dress;dress;Cute
+Tartan-Plaid Outfit;dress;Cute
+Turnip Dress;dress;Cute
+Vogue Dress;dress;Cute
+Yellow Dotted Dress;dress;Cute
+Yellow Raincoat;dress;Cute
+Baby's Hat;hat;Cute
+Badge Hat;hat;Cute
+Balloon Hat;hat;Cute
+Bear Cap;hat;Cute
+Big Bro's Hat;hat;Cute
+Birthday Hat;hat;Cute
+Blue New Year's Hat;hat;Cute
+Blue Nightcap;hat;Cute
+Blue Pikmin;hat;Cute
+Blue Ribbon;hat;Cute
+Braided Wig;hat;Cute
+Bulb Bopper;hat;Cute
+Bun Wig;hat;Cute
+Bunny Hood;hat;Cute
+Cat Cap;hat;Cute
+Dandy Hat;hat;Cute
+Flower Bopper;hat;Cute
+Frog Cap;hat;Cute
+Grape Hat;hat;Cute
+Green New Year's Hat;hat;Cute
+Halo;hat;Cute
+Heart Bopper;hat;Cute
+Heart Hairpin;hat;Cute
+Hibiscus Hairpin;hat;Cute
+Kintaro Wig;hat;Cute
+Kiwi Hat;hat;Cute
+Li'l Bro's Hat;hat;Cute
+Mandarin Hat;hat;Cute
+Melon Hat;hat;Cute
+Moon Hairpin;hat;Cute
+Orange Knit Hat;hat;Cute
+Pink Knit Hat;hat;Cute
+Pink Nightcap;hat;Cute
+Purple Knit Hat;hat;Cute
+Red Hood;hat;Cute
+Red New Year's Hat;hat;Cute
+Red Pikmin;hat;Cute
+Red Pom-Pom Hat;hat;Cute
+Red Ribbon;hat;Cute
+Ribboned Straw Hat;hat;Cute
+Santa Hat;hat;Cute
+Small Silk Hat;hat;Cute
+Snowman Head;hat;Cute
+Star Bopper;hat;Cute
+Star Hairpin;hat;Cute
+Strawberry Hat;hat;Cute
+Toad Hat;hat;Cute
+Tulip Hat;hat;Cute
+Watermelon Hat;hat;Cute
+Wizard's Cap;hat;Cute
+Y. New Year's Hat;hat;Cute
+Yellow Pikmin;hat;Cute
+Yellow Ribbon;hat;Cute
+Beak;accessory;Cute
+Big Bro's Mustache;accessory;Cute
+Facial Mask;accessory;Cute
+Heart Shades;accessory;Cute
+Pacifier;accessory;Cute
+Pink Glasses;accessory;Cute
+Red Glasses;accessory;Cute
+Red Nose;accessory;Cute
+Santa Beard;accessory;Cute
+Stache & Glasses;accessory;Cute
+Yellow Glasses;accessory;Cute
+Green Polka Pumps;shoes;Cute
+Orange Sandals;shoes;Cute
+Pink Slip-Ons;shoes;Cute
+Pink Sneakers;shoes;Cute
+Polka-Dot Rain Boots;shoes;Cute
+Purple Dot Shoes;shoes;Cute
+Red Boat Shoes;shoes;Cute
+Red Shoes;shoes;Cute
+Santa Boots;shoes;Cute
+Shearling Boots;shoes;Cute
+White Patent Shoes;shoes;Cute
+Yellow buckled shoes;shoes;Cute
+Yellow Rain Boots;shoes;Cute
+Black Leggings;socks;Cute
+Gray Leggings;socks;Cute
+Green Tights;socks;Cute
+Heart-Print Tights;socks;Cute
+Polka-Dot Socks;socks;Cute
+Purple Star Socks;socks;Cute
+Purple-Stripe Tights;socks;Cute
+Star Tights;socks;Cute
+White-Lace Socks;socks;Cute
+Argyle Knit;top;Iconic
+Bad Plaid Shirt;top;Iconic
+Bad Plaid Tee;top;Iconic
+Blue Aloha Tee;top;Iconic
+Blue Argyle Shirt;top;Iconic
+Blue Argyle Tee;top;Iconic
+Cavalier Shirt;top;Iconic
+Dawn Tank;top;Iconic
+Dawn Tee;top;Iconic
+Detective Outfit;top;Iconic
+Dogtooth Shirt;top;Iconic
+Dogtooth Tee;top;Iconic
+Fall Plaid Shirt;top;Iconic
+Fall Plaid Tee;top;Iconic
+Festivale Tank;top;Iconic
+Folk Shirt;top;Iconic
+Folk Tunic;top;Iconic
+Genie Shirt;top;Iconic
+Genie Vest;top;Iconic
+Gray Tartan Shirt;top;Iconic
+Gray Tartan Tee;top;Iconic
+Hanten Shirt;top;Iconic
+Happi Tee;top;Iconic
+Hero's Clothes;top;Iconic
+Hot Spring Tee;top;Iconic
+Imperial Shirt;top;Iconic
+Jinbei Top;top;Iconic
+New Spring Tee;top;Iconic
+Pastel-Stripe Tee;top;Iconic
+Periwinkle Tee;top;Iconic
+Red Aloha Tee;top;Iconic
+Red Argyle Shirt;top;Iconic
+Red Argyle Tee;top;Iconic
+Reggae Tank;top;Iconic
+Reggae Tee;top;Iconic
+Scale-Print Tee;top;Iconic
+Snowy Sweater;top;Iconic
+Tacky Sweater;top;Iconic
+Tan Dogtooth Shirt;top;Iconic
+Tan Dogtooth Tee;top;Iconic
+Tropical Tank;top;Iconic
+Tropical Tee;top;Iconic
+Waffle Shirt;top;Iconic
+Waffle Tee;top;Iconic
+Western Shirt;top;Iconic
+Aloha Shorts;bottom;Iconic
+Brown Argyle Skirt;bottom;Iconic
+Dogtooth Pants;bottom;Iconic
+Festivale Pants;bottom;Iconic
+Genie Pants;bottom;Iconic
+Grass Skirt;bottom;Iconic
+Gray Tartan Skirt;bottom;Iconic
+Hero's Pants;bottom;Iconic
+Hot Spring Skirt;bottom;Iconic
+Imperial Pants;bottom;Iconic
+Jinbei Shorts;bottom;Iconic
+Kilt;bottom;Iconic
+New Spring Skirt;bottom;Iconic
+Patched-Knee Pants;bottom;Iconic
+Pink Argyle Skirt;bottom;Iconic
+Red Tartan Pants;bottom;Iconic
+Tan Dogtooth Pants;bottom;Iconic
+Western Pants;bottom;Iconic
+Alpinist Dress;dress;Iconic
+Blossoming Dress;dress;Iconic
+Casual Outfit;dress;Iconic
+Chima Jeogori Dress;dress;Iconic
+Dogtooth Dress;dress;Iconic
+Festivale Tank Dress;dress;Iconic
+Gaudy Dress;dress;Iconic
+Kimono;dress;Iconic
+Maid Dress;dress;Iconic
+Milkmaid Dress;dress;Iconic
+Muumuu;dress;Iconic
+Palatial Tank Dress;dress;Iconic
+Pastel-Stripe Dress;dress;Iconic
+Pinafore;dress;Iconic
+Pink Polka Dress;dress;Iconic
+Poncho;dress;Iconic
+Spring Kimono;dress;Iconic
+Tan Dogtooth Dress;dress;Iconic
+Toga;dress;Iconic
+Yodel Dress;dress;Iconic
+Alpinist Hat;hat;Iconic
+Beret;hat;Iconic
+Cavalier Hat;hat;Iconic
+Celebration Hat;hat;Iconic
+Conical Straw Hat;hat;Iconic
+Detective Hat;hat;Iconic
+Geisha Wig;hat;Iconic
+Grandpa Hat;hat;Iconic
+Hero's Cap;hat;Iconic
+Hunter's Cap;hat;Iconic
+Kaffiyeh;hat;Iconic
+Lion-Dance Mask;hat;Iconic
+Milkmaid Hat;hat;Iconic
+Newsprint Helmet;hat;Iconic
+Outback Hat;hat;Iconic
+Paperboy Cap;hat;Iconic
+Pigtail;hat;Iconic
+Puffy Hat;hat;Iconic
+Shamrock Hat;hat;Iconic
+Silk Hat;hat;Iconic
+Sombrero;hat;Iconic
+Stagehand Hat;hat;Iconic
+Straw Hat;hat;Iconic
+Turban;hat;Iconic
+Warbonnet;hat;Iconic
+Ballroom Mask;accessory;Iconic
+Masquerade Mask;accessory;Iconic
+Silver Frames;accessory;Iconic
+Thick Glasses;accessory;Iconic
+Tortoise Specs;accessory;Iconic
+Cowboy Boots;shoes;Iconic
+Flower Loafers;shoes;Iconic
+Gladiator Sandals;shoes;Iconic
+Hero's Boots;shoes;Iconic
+Kimono sandals;shoes;Iconic
+Tropical Sandals;shoes;Iconic
+Wooden Clogs;shoes;Iconic
+Argyle Socks;socks;Iconic
+Argyle Tights;socks;Iconic
+Airy Tee;top;Modern
+Blue Diamond Shirt;top;Modern
+Blue Diamond Tee;top;Modern
+Blue Plaid Shirt;top;Modern
+Blue Plaid Tee;top;Modern
+Brown-Bar Shirt;top;Modern
+Brown-Bar Tee;top;Modern
+Cool Tank;top;Modern
+Crewel Tee;top;Modern
+Dark Polka Shirt;top;Modern
+Dark Polka Tee;top;Modern
+Go-Go Shirt;top;Modern
+Gracie Tank;top;Modern
+Grape-Stripe Shirt;top;Modern
+Grape-Stripe Tee;top;Modern
+Jade Plaid Shirt;top;Modern
+Jade Plaid Tee;top;Modern
+Night-Sky Tee;top;Modern
+Preppy Shirt;top;Modern
+Swell Shirt;top;Modern
+Swell Tee;top;Modern
+Dark Polka Skirt;bottom;Modern
+Blue Retro Dress;dress;Modern
+Cool Dress;dress;Modern
+Cloche Hat;hat;Modern
+Gracie Hat;hat;Modern
+Gracie Glasses;accessory;Modern
+Oval Shades;accessory;Modern
+Clogs;shoes;Modern
+Stripe Shoes;shoes;Modern
+A Tee;top;Basic
+Aqua Polka Tank;top;Basic
+Aqua Polka Tee;top;Basic
+Big-Dot Tank;top;Basic
+Big-Dot Tee;top;Basic
+Big-Star Tee;top;Basic
+Black Flannel Shirt;top;Basic
+Black-Denim Jacket;top;Basic
+Blue Down Jacket;top;Basic
+Blue Flannel Shirt;top;Basic
+Blue PJ Shirt;top;Basic
+Blue Tie-Dye Tank;top;Basic
+Blue Tie-Dye Tee;top;Basic
+Blue-Bar Shirt;top;Basic
+Blue-Bar Tee;top;Basic
+Blue-Check Shirt;top;Basic
+Blue-Check Tee;top;Basic
+Blue-Grid Shirt;top;Basic
+Blue-Grid Tee;top;Basic
+Bright Tee;top;Basic
+Chevron Shirt;top;Basic
+Cloudy Tee;top;Basic
+Club Tee;top;Basic
+Comfy Sweater;top;Basic
+Cyan Argyle Tank;top;Basic
+Dapper Shirt;top;Basic
+Dapper Tee;top;Basic
+Denim Jacket;top;Basic
+Diamond Tee;top;Basic
+Earthy Knit Shirt;top;Basic
+Fern Shirt;top;Basic
+Fern Tee;top;Basic
+Grass Tee;top;Basic
+Gray Parka;top;Basic
+Green Tie-Dye Tank;top;Basic
+Green Tie-Dye Tee;top;Basic
+Green-Bar Shirt;top;Basic
+Green-Bar Tee;top;Basic
+HHA Tee;top;Basic
+Mint Gingham Shirt;top;Basic
+Mint Gingham Tee;top;Basic
+Orange Tie-Dye Tank;top;Basic
+Orange Tie-Dye Tee;top;Basic
+Paw Tee;top;Basic
+Peacoat;top;Basic
+Picnic Shirt;top;Basic
+Picnic Tee;top;Basic
+Pink Parka;top;Basic
+Pink PJ Shirt;top;Basic
+Purple Tie-Dye Tank;top;Basic
+Purple Tie-Dye Tee;top;Basic
+Raglan Shirt;top;Basic
+Raglan Tee;top;Basic
+Red Down Jacket;top;Basic
+Red Flannel Shirt;top;Basic
+Red Tie-Dye Tank;top;Basic
+Red Tie-Dye Tee;top;Basic
+Red-Check Tee;top;Basic
+Red-Grid Shirt;top;Basic
+Red-Grid Tee;top;Basic
+Sno-Cone Tank;top;Basic
+Sno-Cone Tee;top;Basic
+Snow Shirt;top;Basic
+Spade Tee;top;Basic
+Speedway Tee;top;Basic
+Sunset Tank;top;Basic
+Sunset Tee;top;Basic
+Tan Puffy Vest;top;Basic
+Vegetarian Shirt;top;Basic
+Vegetarian Tee;top;Basic
+Yellow-Bar Shirt;top;Basic
+Yellow-Bar Tee;top;Basic
+Black Formal Skirt;bottom;Basic
+Black-Denim Pants;bottom;Basic
+Black-Denim Skirt;bottom;Basic
+Blue PJ Bottoms;bottom;Basic
+Blue Stripe Pants;bottom;Basic
+Blue-Grid Skirt;bottom;Basic
+Brown Plaid Shorts;bottom;Basic
+Chino Pants;bottom;Basic
+Dapper Skirt;bottom;Basic
+Dry-Denim Pants;bottom;Basic
+Gray Formal Skirt;bottom;Basic
+Gray Sweatpants;bottom;Basic
+Gray-Stripe Pants;bottom;Basic
+Green Tartan Pants;bottom;Basic
+Mint Gingham Skirt;bottom;Basic
+Navy Formal Skirt;bottom;Basic
+Picnic Skirt;bottom;Basic
+Pink PJ Bottoms;bottom;Basic
+Red-Grid Skirt;bottom;Basic
+Dapper Dress;dress;Basic
+Green Dress;dress;Basic
+Prim Outfit;dress;Basic
+Red Dress;dress;Basic
+Blue Pom-Pom Hat;hat;Basic
+Do-Rag;hat;Basic
+Green Knit Hat;hat;Basic
+Straw Boater;hat;Basic
+Stripe Knit Cap;hat;Basic
+Blue Frames;accessory;Basic
+Brown Glasses;accessory;Basic
+Doctor's Mask;accessory;Basic
+Green Glasses;accessory;Basic
+Mint Glasses;accessory;Basic
+Purple Glasses;accessory;Basic
+Black Loafers;shoes;Basic
+Blue Sneakers;shoes;Basic
+Brown Pumps;shoes;Basic
+Brown Slip-Ons;shoes;Basic
+Green Buckled Shoes;shoes;Basic
+Green Sandals;shoes;Basic
+Green-Stripe Socks;shoes;Basic
+Slippers;shoes;Basic
+White Ankle Socks;shoes;Basic
+Beige Tights;socks;Basic
+Black Ankle Socks;socks;Basic
+Bobby Socks;socks;Basic
+Brown Socks;socks;Basic
+Brown-Stripe Socks;socks;Basic
+Checkered Socks;socks;Basic
+Gray Socks;socks;Basic
+Gray Tights;socks;Basic
+Tube Socks;socks;Basic
+White Socks;socks;Basic
+Armor Suit;top;Historical
+Beige Knit Shirt;top;Historical
+Camel Shirt;top;Historical
+Caveman Tank;top;Historical
+Chichi-Print Tee;top;Historical
+Deer Shirt;top;Historical
+Fall Leaf Shirt;top;Historical
+Gold-Armor Suit;top;Historical
+Gold-Bar Shirt;top;Historical
+Gold-Bar Tee;top;Historical
+Misty Tank;top;Historical
+Misty Tee;top;Historical
+Monkey Shirt;top;Historical
+Ninja Shirt;top;Historical
+Painter's Shirt;top;Historical
+Painter's Tee;top;Historical
+Samurai Shirt;top;Historical
+Scale-Armor Suit;top;Historical
+Sharp Outfit;top;Historical
+Straw Shirt;top;Historical
+Subdued-Print Tee;top;Historical
+Vertigo Shirt;top;Historical
+Vertigo Tee;top;Historical
+Armor Pants;bottom;Historical
+Caveman Shorts;bottom;Historical
+Gold-Armor Pants;bottom;Historical
+Ninja Pants;bottom;Historical
+Samurai Pants;bottom;Historical
+Scale-Armor Pants;bottom;Historical
+Caveman Tank Dress;dress;Historical
+Pharaoh's Outfit;dress;Historical
+With's Robe;dress;Historical
+Cow Bone;hat;Historical
+Diving Mask;hat;Historical
+Headkerchief;hat;Historical
+King Tut Mask;hat;Historical
+Knight's Helmet;hat;Historical
+Ninja Hood;hat;Historical
+Powdered Wig;hat;Historical
+Roman Helmet;hat;Historical
+Samurai Helmet;hat;Historical
+Samurai Wig;hat;Historical
+Straw Umbrella Hat;hat;Historical
+Viking Helmet;hat;Historical
+Witch's Hat;hat;Historical
+Rimmed Glasses;accessory;Historical
+Round Glasses;accessory;Historical
+Tiny Shades;accessory;Historical
+Armor Shoes;shoes;Historical
+Gold-Armor Shoes;shoes;Historical
+Ninja Sandals;shoes;Historical
+Acid-Washed Jacket;top;Rock 'n' Roll
+After-School Jacket;top;Rock 'n' Roll
+Arctic-Camo Shirt;top;Rock 'n' Roll
+Arctic-Camo Tee;top;Rock 'n' Roll
+BB Tee;top;Rock 'n' Roll
+Black Letter Jacket;top;Rock 'n' Roll
+Blue Letter Jacket;top;Rock 'n' Roll
+Bone Shirt;top;Rock 'n' Roll
+Cafe Tee;top;Rock 'n' Roll
+Chain-Gang Shirt;top;Rock 'n' Roll
+Chain-Gang Tee;top;Rock 'n' Roll
+Checkerboard Shirt;top;Rock 'n' Roll
+Checkerboard Tee;top;Rock 'n' Roll
+Checkered Tee;top;Rock 'n' Roll
+Circuit Tank;top;Rock 'n' Roll
+Denim Vest;top;Rock 'n' Roll
+Desert-Camo Shirt;top;Rock 'n' Roll
+Desert-Camo Tee;top;Rock 'n' Roll
+Dragon Jacket;top;Rock 'n' Roll
+Fish Tee;top;Rock 'n' Roll
+Flame Shirt;top;Rock 'n' Roll
+Flame Tee;top;Rock 'n' Roll
+Jagged Tank;top;Rock 'n' Roll
+Jagged Tee;top;Rock 'n' Roll
+Jungle-Camo Shirt;top;Rock 'n' Roll
+Jungle-Camo Tee;top;Rock 'n' Roll
+Kanji Tee;top;Rock 'n' Roll
+Leopard Tank;top;Rock 'n' Roll
+Leopard Tee;top;Rock 'n' Roll
+Lightning Tee;top;Rock 'n' Roll
+Pleather Vest;top;Rock 'n' Roll
+Pulse Shirt;top;Rock 'n' Roll
+Pulse Tank;top;Rock 'n' Roll
+Red Letter Jacket;top;Rock 'n' Roll
+Rugby Shirt;top;Rock 'n' Roll
+Rugby Tee;top;Rock 'n' Roll
+Skull Shirt;top;Rock 'n' Roll
+Skull Tee;top;Rock 'n' Roll
+Spiderweb Tee;top;Rock 'n' Roll
+Tiger Jacket;top;Rock 'n' Roll
+Tiger Tank;top;Rock 'n' Roll
+Tiger Tee;top;Rock 'n' Roll
+U R Here Tee;top;Rock 'n' Roll
+Varia Suit;top;Rock 'n' Roll
+Zebra Tank;top;Rock 'n' Roll
+Zebra Tee;top;Rock 'n' Roll
+Zipper Shirt;top;Rock 'n' Roll
+Zipper Tank;top;Rock 'n' Roll
+Acid-Washed Pants;bottom;Rock 'n' Roll
+Arctic-Camo Pants;bottom;Rock 'n' Roll
+Bone Pants;bottom;Rock 'n' Roll
+Cargo Pants;bottom;Rock 'n' Roll
+Checkerboard Skirt;bottom;Rock 'n' Roll
+Desert-Camo Pants;bottom;Rock 'n' Roll
+Dry-Denim Skirt;bottom;Rock 'n' Roll
+Flame Pants;bottom;Rock 'n' Roll
+Jungle-Camo Pants;bottom;Rock 'n' Roll
+Jungle-Camo Shorts;bottom;Rock 'n' Roll
+Leopard Pants;bottom;Rock 'n' Roll
+Leopard Skirt;bottom;Rock 'n' Roll
+Pleather Pants;bottom;Rock 'n' Roll
+Tiger Pants;bottom;Rock 'n' Roll
+Varia Suit Pants;bottom;Rock 'n' Roll
+Worn-Out Jeans;bottom;Rock 'n' Roll
+Zebra Pants;bottom;Rock 'n' Roll
+Black-Velvet Dress;dress;Rock 'n' Roll
+Sea Captain's Coat;dress;Rock 'n' Roll
+U-R-Here Dress;dress;Rock 'n' Roll
+Birthday Shades;hat;Rock 'n' Roll
+Combat Helmet;hat;Rock 'n' Roll
+DJ Cap;hat;Rock 'n' Roll
+Pirate's Hat;hat;Rock 'n' Roll
+Regent Wig;hat;Rock 'n' Roll
+Samus Mask;hat;Rock 'n' Roll
+Terry-Cloth Do-Rag;hat;Rock 'n' Roll
+Aviator Shades;accessory;Rock 'n' Roll
+Eye Patch;accessory;Rock 'n' Roll
+Funky Glasses;accessory;Rock 'n' Roll
+Ladder Shades;accessory;Rock 'n' Roll
+Post-Op Patch;accessory;Rock 'n' Roll
+Triangle Shades;accessory;Rock 'n' Roll
+Lace-Up Boots;shoes;Rock 'n' Roll
+Varia Suit Shoes;shoes;Rock 'n' Roll
+Barber Tee;top;Flashy
+Bold Check Tee;top;Flashy
+Caterpillar Tank;top;Flashy
+Cow Tank;top;Flashy
+Cow Tee;top;Flashy
+Crossing Shirt;top;Flashy
+Danger Tee;top;Flashy
+Dice Tank;top;Flashy
+Dr. Shrunk's Jacket;top;Flashy
+Fiendish Shirt;top;Flashy
+Flan Tank;top;Flashy
+Future Tank;top;Flashy
+Giraffe Tank;top;Flashy
+Giraffe Tee;top;Flashy
+Groovy Tank;top;Flashy
+Groovy Tee;top;Flashy
+Hot Dog Tank;top;Flashy
+Jester Shirt;top;Flashy
+Jester Tank;top;Flashy
+Kappa Costume;top;Flashy
+Kiddie Tee;top;Flashy
+Ladybug Tee;top;Flashy
+Loud Bloom Tee;top;Flashy
+Moldy Shirt;top;Flashy
+Mummy Shirt;top;Flashy
+Nebula Shirt;top;Flashy
+Nebula Tee;top;Flashy
+Noodle Tee;top;Flashy
+Optical Shirt;top;Flashy
+Optical Tank;top;Flashy
+Pop Bloom Tee;top;Flashy
+Prism Tee;top;Flashy
+Sandwich Tank;top;Flashy
+Splendid Tee;top;Flashy
+Star Tee;top;Flashy
+Striking Outfit;top;Flashy
+Sundae Tank;top;Flashy
+Tin Shirt;top;Flashy
+Twinkle Tank;top;Flashy
+Twinkle Tee;top;Flashy
+Uncommon Shirt;top;Flashy
+Cow Pants;bottom;Flashy
+Giraffe Pants;bottom;Flashy
+Jester Pants;bottom;Flashy
+Kappa-Costume Pants;bottom;Flashy
+Mummy Pants;bottom;Flashy
+Red-Stripe Pants;bottom;Flashy
+Two-tone Pants;bottom;Flashy
+Bathrobe;dress;Flashy
+Festive-Tree Dress;dress;Flashy
+Loud Bloom Dress;dress;Flashy
+Moldy Dress;dress;Flashy
+Pop Bloom Dress;dress;Flashy
+Star Tank Dress;dress;Flashy
+Twinkle Tank Dress;dress;Flashy
+Afro Cap;hat;Flashy
+Afro Wig;hat;Flashy
+Banana-Split Hat;hat;Flashy
+Blue Ogre Mask;hat;Flashy
+Bug Mask;hat;Flashy
+Fi Mask;hat;Flashy
+Ghost Mask;hat;Flashy
+Green-Pumpkin Head;hat;Flashy
+Headband;hat;Flashy
+Hot-Dog Hat;hat;Flashy
+Jester's Cap;hat;Flashy
+Kappa Cap;hat;Flashy
+Majora's Mask;hat;Flashy
+Makar's Mask;hat;Flashy
+Midna's Mask;hat;Flashy
+Mohawk Wig;hat;Flashy
+Monster Mask;hat;Flashy
+Mummy Mask;hat;Flashy
+Ogre's Wig;hat;Flashy
+Pumpkin Head;hat;Flashy
+Purple-Imp Hood;hat;Flashy
+Purple-Pumpkin Head;hat;Flashy
+Red Ogre Mask;hat;Flashy
+Red-Pumpkin Head;hat;Flashy
+Shower Cap;hat;Flashy
+Skeleton Hood;hat;Flashy
+Ski Mask;hat;Flashy
+Tingle Hood;hat;Flashy
+Wario Hat;hat;Flashy
+Werewolf Hood;hat;Flashy
+Yellow-Pumpkin Head;hat;Flashy
+3D Glasses;accessory;Flashy
+Bad Bro's Stache;accessory;Flashy
+Cucumber Pack;accessory;Flashy
+Cyber Shades;accessory;Flashy
+Eye Mask;accessory;Flashy
+Funny Glasses;accessory;Flashy
+Gas Mask;accessory;Flashy
+HMD;accessory;Flashy
+Huge Shades;accessory;Flashy
+Jester's Mask;accessory;Flashy
+Leaf;accessory;Flashy
+Lemon Pack;accessory;Flashy
+Star Shades;accessory;Flashy
+Steampunk Glasses;accessory;Flashy
+Jester's Shoes;shoes;Flashy
+Steel-Toed Boots;shoes;Flashy
+Colorful Socks;socks;Flashy
+Beige Emblem Blazer;top;Official
+Blue Tartan Tee;top;Official
+Cafe Uniform;top;Official
+Canary Shirt;top;Official
+Captain's Jacket;top;Official
+Chef's Outfit;top;Official
+Clerk's Shirt;top;Official
+Concierge Shirt;top;Official
+Doctor's Coat;top;Official
+Flight-Crew Shirt;top;Official
+Green Emblem Blazer;top;Official
+HHA Jacket;top;Official
+Military Uniform;top;Official
+Sailor's Shirt;top;Official
+Sailor's Tee;top;Official
+School Jacket;top;Official
+Security Tee;top;Official
+Sweater-Vest;top;Official
+Tuxedo;top;Official
+Waistcoat;top;Official
+White Tuxedo Jacket;top;Official
+Work Shirt;top;Official
+Black Formal Pants;bottom;Official
+Brown Formal Pants;bottom;Official
+Gray Formal Pants;bottom;Official
+Military Pants;bottom;Official
+Navy Formal Pants;bottom;Official
+Sailor Skirt;bottom;Official
+White Formal Pants;bottom;Official
+Academy Uniform;dress;Official
+Blue Party Dress;dress;Official
+Cake Dress;dress;Official
+Cake Tank Dress;dress;Official
+Graduation Gown;dress;Official
+Green Lace-Up Dress;dress;Official
+Nurse's Uniform;dress;Official
+Orange Lace-Up Dress;dress;Official
+Orange Retro Dress;dress;Official
+Pink Party Dress;dress;Official
+Prep-School Uniform;dress;Official
+Shirtdress;dress;Official
+Sky Dress;dress;Official
+Trench Coat;dress;Official
+Waitress Dress;dress;Official
+Black Veil;hat;Official
+Blue Plaid Fedora;hat;Official
+Bridal Veil;hat;Official
+Captain's Hat;hat;Official
+Chef's Hat;hat;Official
+Emperor's Cap;hat;Official
+Mailman's Hat;hat;Official
+Matador's Hat;hat;Official
+Nurse's Cap;hat;Official
+Pilot's Hat;hat;Official
+Plain Black Cap;hat;Official
+Police Cap;hat;Official
+Sailor's Hat;hat;Official
+Scholar's Hat;hat;Official
+School Hat;hat;Official
+Student Cap;hat;Official
+Top Hat;hat;Official
+Tsunokakushi;hat;Official
+Curly Mustache;accessory;Official
+Doctor's Mirror;accessory;Official
+Monocle;accessory;Official
+Pilot Shades;accessory;Official
+Black Pumps;shoes;Official
+Black Rain Boots;shoes;Official
+Blue Pumps;shoes;Official
+Brown Loafers;shoes;Official
+Mary Janes;shoes;Official
+Monochrome Shoes;shoes;Official
+Navy Socks;shoes;Official
+Purple Pumps;shoes;Official
+Tasseled loafers;shoes;Official
+White Leather Shoes;shoes;Official
+Black Stockings;socks;Official
+Black Tights;socks;Official
+Dress Socks;socks;Official
+White Stockings;socks;Official
+Amethyst Shirt;top;Ornate
+Amethyst Tee;top;Ornate
+Beaded Shirt;top;Ornate
+Blue Ringmaster Coat;top;Ornate
+Coral Tank;top;Ornate
+Coral Tee;top;Ornate
+Corseted Shirt;top;Ornate
+Noble Shirt;top;Ornate
+Rainbow Tank;top;Ornate
+Rainbow Tee;top;Ornate
+Red Ringmaster Coat;top;Ornate
+Royal Shirt;top;Ornate
+Corseted Skirt;bottom;Ornate
+Royal Shorts;bottom;Ornate
+Blue Lace-Up Dress;dress;Ornate
+Butterfly Dress;dress;Ornate
+Classic Dress;dress;Ornate
+Frock Coat;dress;Ornate
+Pink Lace-Up Dress;dress;Ornate
+Plum Coat;dress;Ornate
+Princess Dress;dress;Ornate
+Coin Headpiece;hat;Ornate
+Crown;hat;Ornate
+Elegant Hat;hat;Ornate
+Festivale Accessory;hat;Ornate
+Flashy Hairpin;hat;Ornate
+Floppy Hat;hat;Ornate
+Funky Wig;hat;Ornate
+Girl's Day Updo;hat;Ornate
+Hair-Bow Wig;hat;Ornate
+Matronly Bun;hat;Ornate
+Royal Crown;hat;Ornate
+Tiara Hair;hat;Ornate
+King's Beard;accessory;Ornate
+Leopard Pumps;shoes;Ornate
+Fishnet Tights;socks;Ornate
+Rainbow Tights;socks;Ornate
+Red Tights;socks;Ornate
